@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:Pages="clr-namespace:LeSportif.Pages"
+              xmlns:android ="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="LeSportif.Pages.AcceuilPage"
+             NavigationPage.HasNavigationBar="False">
+    <!--Pages can be added as references or inline-->
+
+    <TabbedPage.Children>
+        <NavigationPage Title="Profile">
+            <x:Arguments>
+                <Pages:ProfilPage BindingContext="{Binding ProfilePageModel}" />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Calories" IconImageSource="calorie.png">
+            <x:Arguments>
+                <Pages:CaloriesPage BindingContext="{Binding CaloriesPageModel}" />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Food">
+            <x:Arguments>
+                <Pages:FoodPage BindingContext="{Binding FoodPageModel}" IconImageSource="food"/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Gym">
+            <x:Arguments>
+                <Pages:GymPage BindingContext="{Binding GymPageModel}" IconImageSource="" />
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+    </TabbedPage>

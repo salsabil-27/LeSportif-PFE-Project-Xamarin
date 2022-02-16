@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:extensions="http://xamarin.com/schemas/2020/toolkit" xmlns:pagemodels="clr-namespace:LeSportif.PageModels" x:DataType="pagemodels:LoginPageModel"
+             x:Class="LeSportif.Pages.LoginPage"
+             
+            NavigationPage.HasNavigationBar="False" >
+    <Grid>
+
+        <extensions:MediaElement x:Name="Bgvieo"  Source="https://static.videezy.com/system/resources/previews/000/032/887/original/man-gym-dumbel4.mp4"  Aspect="AspectFill" AutoPlay="True" Volume="0" IsLooping="True" ShowsPlaybackControls="False"
+                                   HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <BoxView>
+            <BoxView.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="Black" Offset="0"></GradientStop>
+                    <GradientStop Color="Transparent" Offset="0.9"></GradientStop>
+                    <GradientStop Color="Black" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center"/>
+
+        <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+            <Frame  BackgroundColor="Transparent" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
+
+                <StackLayout>
+
+
+
+                    <StackLayout Margin="60">
+                        <Label Text="Sign In"  TextColor="White" FontSize="Title" HorizontalOptions="CenterAndExpand" FontAttributes="Italic" />
+                    </StackLayout>
+
+                    <StackLayout Padding="0" Margin="10,10">
+
+                        <Frame BackgroundColor="Transparent" BorderColor="White" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+
+                                <Entry Placeholder="Email" PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                            Text="{Binding Password}" TextColor="WhiteSmoke"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="Transparent" BorderColor="White" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+
+                                <Entry Placeholder="Password" IsPassword="True"  PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                           Text="{Binding Username}" TextColor="WhiteSmoke"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <StackLayout  Orientation="Horizontal">
+                            <CheckBox IsChecked="False" Color="White" />
+                            <Label Text="Remember me" TextColor="White" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+                            <Label Text="Forgot Password" TextColor="White"  HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+
+                        </StackLayout>
+
+                        <Button Text="SIGN IN" BackgroundColor="CadetBlue" TextColor="White"  CornerRadius="30" Command="{Binding  LoginCommand}" />
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" 
+                                         >
+                            <Label Text="Still Not Connected ?" TextColor="White" FontSize="Small"/>
+                            <Label Text="Sign Up" TextColor="CadetBlue" FontAttributes="Bold" FontSize="Small"/>
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </StackLayout>
+
+            </Frame>
+        </StackLayout>
+        </Grid>
+</ContentPage>
