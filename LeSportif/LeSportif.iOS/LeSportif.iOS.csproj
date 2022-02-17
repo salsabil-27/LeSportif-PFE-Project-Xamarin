@@ -134,15 +134,21 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\food.png" />
+    <BundleResource Include="Resources\gym.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\calorie.png" />
+    <BundleResource Include="Resources\food.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\utilisateur.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\gym.png" />
+    <BundleResource Include="Resources\calorie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\password.PNG" />
   </ItemGroup>
 </Project>

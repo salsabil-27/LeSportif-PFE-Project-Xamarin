@@ -15,6 +15,8 @@ namespace LeSportif.Pages
         public AcceuilPage()
         {
             InitializeComponent();
+            BarBackgroundColor = Color.FromHex("#B5cbcb");
+            BarTextColor = Color.Black;
         }
     }
 }

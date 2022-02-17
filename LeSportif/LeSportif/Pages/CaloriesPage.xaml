@@ -1,13 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pagemodels="clr-namespace:LeSportif.PageModels" x:DataType="pagemodels:CaloriesPageModel"
              x:Class="LeSportif.Pages.CaloriesPage"
+             BackgroundImageSource="call"
               NavigationPage.HasNavigationBar="False">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+    <Grid>
+
+        <BoxView>
+            <BoxView.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="SlateGray" Offset="0"></GradientStop>
+                    <GradientStop Color="Transparent" Offset="0.5"></GradientStop>
+                    <GradientStop Color="SlateGray" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center"/>
+
+        <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+            <Frame  BackgroundColor="Transparent" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
+
+                <StackLayout>
+
+                    <StackLayout  Padding="10" Margin="30" Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="It's NOT a Diet It's a Lifestyl change" TextColor="Black"  FontSize="Title" 
+                                FontAttributes="Italic"  HorizontalTextAlignment="Center" TextDecorations="Underline"  />
+                    </StackLayout>
+
+                    <StackLayout Padding="0" Margin="10,10">
+
+                        <Frame BackgroundColor="LightGray" BorderColor="LightGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                              
+                                <Entry Placeholder="Age" PlaceholderColor="Gray"  FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                             TextColor="Black"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="LightGray" BorderColor="LightGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                            
+                                <Entry Placeholder="Weight"  PlaceholderColor="Gray"  FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                           TextColor="Black"/>
+                                <Entry Placeholder="Height"  PlaceholderColor="Gray"  FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                           TextColor="Black"/>
+                            </StackLayout>
+                        </Frame>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+
+                            <RadioButton Content="Man" FontAttributes="Bold" FontSize="Large" BackgroundColor="Transparent" TextColor="Black" Margin="19" />
+                            <RadioButton  Content="Woman"  FontAttributes="Bold" FontSize="Large" BackgroundColor="Transparent" TextColor="Black" Margin="19"/>
+                        </StackLayout>
+                        <StackLayout  >
+                            <Button Text="Calculate" BackgroundColor="CadetBlue" TextColor="White"  CornerRadius="30"  />
+                        </StackLayout>
+                       
+                       
+                    </StackLayout>
+
+
+                </StackLayout>
+
+            </Frame>
         </StackLayout>
-    </ContentPage.Content>
+    </Grid>
+
 </ContentPage>

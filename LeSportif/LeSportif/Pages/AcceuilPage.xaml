@@ -1,16 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:Pages="clr-namespace:LeSportif.Pages"
-              xmlns:android ="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
             x:Class="LeSportif.Pages.AcceuilPage"
-             NavigationPage.HasNavigationBar="False">
-    <!--Pages can be added as references or inline-->
+             SelectedTabColor="Black"
+             NavigationPage.HasNavigationBar="True">
 
+    <!--Pages can be added as references or inline-->
+    <TabbedPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#B5cbcb</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarTextColor" Value="Black" />
+            </Style>
+        </ResourceDictionary>
+    </TabbedPage.Resources>
     <TabbedPage.Children>
-        <NavigationPage Title="Profile">
-            <x:Arguments>
-                <Pages:ProfilPage BindingContext="{Binding ProfilePageModel}" />
+        <NavigationPage Title="Profile" IconImageSource="utilisateur">
+            <x:Arguments >
+                <Pages:ProfilPage BindingContext="{Binding ProfilePageModel}"  />
             </x:Arguments>
         </NavigationPage>
         <NavigationPage Title="Calories" IconImageSource="calorie.png">
@@ -18,15 +27,15 @@
                 <Pages:CaloriesPage BindingContext="{Binding CaloriesPageModel}" />
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage Title="Food">
+        <NavigationPage Title="Food" IconImageSource="food">
             <x:Arguments>
-                <Pages:FoodPage BindingContext="{Binding FoodPageModel}" IconImageSource="food"/>
+                <Pages:FoodPage BindingContext="{Binding FoodPageModel}" />
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage Title="Gym">
+        <NavigationPage Title="GYM" IconImageSource="gym">
             <x:Arguments>
-                <Pages:GymPage BindingContext="{Binding GymPageModel}" IconImageSource="" />
+                <Pages:GymPage BindingContext="{Binding GymPageModel}"  />
             </x:Arguments>
         </NavigationPage>
     </TabbedPage.Children>
-    </TabbedPage>
+</TabbedPage>
