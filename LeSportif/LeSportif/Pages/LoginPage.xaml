@@ -5,8 +5,8 @@
             NavigationPage.HasNavigationBar="False" >
 
     <Grid>
-
-        <extensions:MediaElement x:Name="Bgvieo"  Source="https://static.videezy.com/system/resources/previews/000/032/887/original/man-gym-dumbel4.mp4"  Aspect="AspectFill" AutoPlay="True" Volume="0" IsLooping="True" ShowsPlaybackControls="False"
+        
+       <extensions:MediaElement  Source="https://static.videezy.com/system/resources/previews/000/032/887/original/man-gym-dumbel4.mp4"  Aspect="AspectFill" AutoPlay="True" Volume="0" IsLooping="True" ShowsPlaybackControls="False"
                                    HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
         <BoxView>
             <BoxView.Background>
