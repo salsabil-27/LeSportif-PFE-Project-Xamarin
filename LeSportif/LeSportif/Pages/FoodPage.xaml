@@ -1,13 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:pagemodels="clr-namespace:LeSportif.PageModels" x:DataType="pagemodels:FoodPageModel"
+             mc:Ignorable="d"
              x:Class="LeSportif.Pages.FoodPage"
+            BackgroundImageSource="foodBg"
               NavigationPage.HasNavigationBar="False">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+   
+    <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="Auto,*,Auto" Padding="40,70,40,7">
+
+        <Label Grid.Row="1" Grid.Column="1" Text="You Are What You Eat!" TextColor="Black" FontSize="26" FontAttributes="Bold" 
+                   VerticalOptions="End" HorizontalOptions="Center" TextDecorations="Underline"/>
+        <Frame Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="Transparent" BorderColor="Black" CornerRadius="45"  HasShadow="False" Margin="-33,40,-33,0">
+ 
+         <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" Padding="4,5,4,5">
+
+       <!-- button -->
+                <Button x:Name="zinc"  Grid.Row="0" Grid.Column="0" Text="Food Rich With Zinc"  FontSize="Small"   HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Zinc_Clicked"/>
+                <Button x:Name="Calcium"  Grid.Row="0" Grid.Column="1" Text="Food Rich With Calcium" FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Calcium_Clicked"/>
+                <Button x:Name="magnesium" Grid.Row="2" Grid.Column="0" Text="Food Rich With magnesium" FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="magnesium_Clicked" />
+                <Button x:Name="Iron" Grid.Row="2" Grid.Column="1" Text="Food Rich With Iron " FontSize="Small" HeightRequest="100" CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Iron_Clicked" />
+                <Button x:Name="protein"  Grid.Row="4" Grid.Column="0" Text="Food Rich With protein "  FontSize="Small"  HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="protein_Clicked" />
+                <Button x:Name="vprot"  Grid.Row="4" Grid.Column="1" Text="Food Rich With vegetable-protein " FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="vprot_Clicked"/>
+                <Button x:Name="Evitamin"  Grid.Row="6" Grid.Column="0" Text="Food Rich With vitamin E" FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Evitamin_Clicked" />
+                <Button x:Name="Cvitamin"  Grid.Row="6" Grid.Column="1" Text="Food Rich With vitamin C" FontSize="Small" HeightRequest="100" CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black"  Clicked="Cvitamin_Clicked"/>
+                
+          </Grid>
+          
+         </Frame> 
+
+
+    </Grid>
+
 </ContentPage>
