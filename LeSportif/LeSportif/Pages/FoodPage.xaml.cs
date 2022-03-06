@@ -44,7 +44,7 @@ namespace LeSportif.Pages
         {
             try
             {
-                await Navigation.PushAsync(new CalciumPage());
+                await Navigation.PushAsync(new MagnesiumPage());
             }
             catch (Exception ex) { M = ex.Message; }
         }
@@ -53,7 +53,7 @@ namespace LeSportif.Pages
         {
             try
             {
-                await Navigation.PushAsync(new CalciumPage());
+                await Navigation.PushAsync(new IronPage());
             }
             catch (Exception ex) { M = ex.Message; }
         }
@@ -62,16 +62,15 @@ namespace LeSportif.Pages
         {
             try
             {
-                await Navigation.PushAsync(new CalciumPage());
+                await Navigation.PushAsync(new ProteinPage());
             }
             catch (Exception ex) { M = ex.Message; }
         }
-
-        private async void vprot_Clicked(object sender, EventArgs e)
+        private async void Omega3_Clicked(object sender, EventArgs e)
         {
             try
             {
-                await Navigation.PushAsync(new CalciumPage());
+                await Navigation.PushAsync(new Omega3Page());
             }
             catch (Exception ex) { M = ex.Message; }
         }
@@ -80,7 +79,7 @@ namespace LeSportif.Pages
         {
             try
             {
-                await Navigation.PushAsync(new CalciumPage());
+                await Navigation.PushAsync(new EvitaminPage());
             }
             catch (Exception ex) { M = ex.Message; }
         }
@@ -89,7 +88,7 @@ namespace LeSportif.Pages
         {
             try
             {
-                await Navigation.PushAsync(new CalciumPage());
+                await Navigation.PushAsync(new CvitaminPage());
             }
             catch (Exception ex) { M = ex.Message; }
         }

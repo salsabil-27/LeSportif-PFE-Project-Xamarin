@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LeSportif.Pages.MagnesiumPage">
+    
+
+     
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="Auto,*,Auto" Padding="0,0,0,0">
+            <StackLayout Margin="15,9,5,0">
+                <Image Source="magnesium"  Grid.ColumnSpan="3"    />
+            </StackLayout>
+
+            <StackLayout Margin="15,610,5,0">
+
+                <Label Text="The benefits of Magnesium :" Grid.Row="4" Grid.Column="0" TextColor="#556B2F" FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="5" Grid.Column="0" Text="Magnesium is needed for more than 300 biochemical reactions in the body. It helps to maintain normal nerve and muscle function, supports a healthy immune system, keeps the heartbeat steady, and helps bones remain strong. It also helps adjust blood glucose levels. It aids in the production of energy and protein"
+                           TextColor="Black" FontSize="Body" FontAttributes="None"  VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0" />
+                <Label Text="1. Bone health " Grid.Row="6" Grid.Column="0" TextColor="#9ACD32" FontAttributes="Bold" FontSize="20"/>
+                <Label Grid.Row="7" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None"  VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"                           
+                       Text=" While most research has focused on the role of calcium in bone health, magnesium is also essential for healthy bone formation. Research from 2013Trusted Source has linked adequate magnesium intake with higher bone density, improved bone crystal formation, and a lower risk of osteoporosis in females after menopause. Magnesium may improve bone health both directly and indirectly, as it helps to regulate calcium and vitamin D levels, which are two other nutrients vital for bone health."/>
+                <Label Text="2. Diabetes"  Grid.Row="8" Grid.Column="0" TextColor="#9ACD32" FontAttributes="Bold" FontSize="20"/>
+                <Label   Grid.Row="9" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None"  VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"                                   
+                    Text="Research has linked high magnesium diets with a lower risk of type 2 diabetes. This may be because magnesium plays an important roleTrusted Source in glucose control and insulin metabolism. A 2015 reviewTrusted Source in the World Journal of Diabetes reports that most, but not all, people with diabetes have low magnesium and that magnesium may play a role in diabetes management. A magnesium deficiency may worsen insulin resistance, which is a condition that often develops before type 2 diabetes. On the other hand, insulin resistance may cause low magnesium levels. In many studies, researchers have linked high magnesium diets with diabetes. In addition, a systematic review from 2017 suggests that taking magnesium supplements can also improve insulin sensitivity in people with low magnesium levels. However, researchers need to gather more evidence before doctors can routinely use magnesium for glycemic control in people with diabetes."/>
+                <Label   Grid.Row="10" Grid.Column="0" TextColor="#9ACD32" FontAttributes="Bold" FontSize="20" Text="3. Cardiovascular health"/>
+                <Label   Grid.Row="11" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None"  VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                Text="The body needs magnesium to maintain the health of muscles, including the heart. Research has found that magnesium plays an important role in heart health.  A 2018 review reports that magnesium deficiency can increase a person's risk of cardiovascular problems. This is partly due to its roles on a cellular level. The authors observe that magnesium deficiency is common in people with congestive heart failure and can worsen their clinical outcomes. People who receive magnesium soon after a heart attack have a lower risk of mortality. Doctors sometimes use magnesium during treatment for congestive heart failure (CHF) to reduce the risk of arrhythmia, or abnormal heart rhythm. According to a 2019 meta-analysisTrusted Source, increasing magnesium intake may lower a person's risk of stroke. They report that for each 100 mg per day increase in magnesium, the risk of stroke reduced by 2%."/>
+
+                <Label   Grid.Row="12" Grid.Column="0" TextColor="#9ACD32" FontAttributes="Bold" FontSize="20" Text=" 4. Migraine headaches"/>
+                <Label   Grid.Row="13" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None"  VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                   Text="Magnesium therapy may helpTrusted Source prevent or relieve headaches. This is because a magnesium deficiency can affect neurotransmitters and restrict blood vessel constriction, which are factors doctors link to migraine. People who experience migraines may have lower levels of magnesium in their blood and body tissues compared with others. Magnesium levels in a person's brain may be low during a migraine. A systematic review from 2017Trusted Source states that magnesium therapy may be useful for preventing migraine. The authors suggest that taking 600 mg of magnesium citrate appears to be a safe and effective prevention strategy. The American Migraine Foundation report that people frequently use doses of 400–500 mg per day for migraine prevention. The amounts that may have an affect are likely to be high, and people should only use this therapy under the guidance of their doctor."  />
+
+
+                <Label Text="Magnesium and Muscle" Grid.Row="14" Grid.Column="0" TextColor="#556B2F" FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="15" Grid.Column="0" VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0" TextColor="Black" Text="Magnesium acts as a natural calcium blocker, helping your muscle cells relax after contracting. When magnesium levels are low, your muscles may contract too much and cause symptoms such as cramps or muscle spasms"/>
+                
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

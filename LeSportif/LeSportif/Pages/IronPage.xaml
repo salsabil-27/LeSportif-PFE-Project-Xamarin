@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LeSportif.Pages.IronPage">
+
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="Auto,*,Auto" Padding="0,0,0,0">
+            <StackLayout Margin="20,10,0,0">
+                <Image Source="iron"  Grid.ColumnSpan="6" />
+            </StackLayout>
+
+            <StackLayout Margin="10,440,0,0">
+
+                <Label Text="The benefits of Iron :" Grid.Row="4" Grid.Column="0" TextColor="CadetBlue" FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="5" Grid.Column="0" Text="Iron is a mineral that the body needs for growth and development. Your body uses iron to make hemoglobin, a protein in red blood cells that carries oxygen from the lungs to all parts of the body, and myoglobin, a protein that provides oxygen to muscles. Your body also needs iron to make some hormones." 
+                     TextColor="Black" FontSize="Body" FontAttributes="None" 
+                      VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0" />
+                <Label Text="Does Taking Iron Supplements Make Weightlifting Easier?" Grid.Row="6" Grid.Column="0" TextColor="CadetBlue" FontAttributes="Bold" FontSize="20"/>
+                <Label Text="-Why They Work ?" Grid.Row="7" Grid.Column="2" TextColor="#A9A9A9" FontAttributes="Bold" FontSize="20"/>
+                <Label Grid.Row="8" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None"  Text="The reason taking iron supplements gives you more energy when lifting weights -- if your body is deficient in iron -- is because iron is a nutrient needed to carry oxygen to red blood cells. Without iron, your blood doesn't effectively oxygenate your body, making exercise seem more difficult. If you're already getting plenty of iron in your diet, however, taking iron supplements likely won't affect perceived effort while lifting weights." Padding="15,0,0,0"/>
+                <Label Text="-When They Work ?" Grid.Row="9" Grid.Column="2" TextColor="#A9A9A9" FontAttributes="Bold" FontSize="20"/>
+                <Label Grid.Row="10" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None"  Text="People who have iron-deficiency anemia due to insufficient iron stored in their bodies may experience fatigue and increased perceived exertion during exercise. This population group may find it easier to complete weightlifting sets after taking iron supplements to correct iron-deficiency anemia and the fatigue associated with it. A study published in 2009 in the 'American Journal of Clinical Nutrition' found that regular exercise tends to decrease iron stores in the body -- therefore, iron supplementation may help improve physical performance during periods of intense training." Padding="15,0,0,0"/>
+                <Label Text="-Taking Precautions !" Grid.Row="11" Grid.Column="2" TextColor="#A9A9A9" FontAttributes="Bold" FontSize="20"/>
+                <Label Grid.Row="10" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None" Padding="15,0,0,0"  Text="Although taking iron supplements can help make weightlifting easier for iron-deficient athletes, getting too much dietary iron from supplements can cause unpleasant side effects and be dangerous. Such side effects may include nausea, constipation, diarrhea, dark stools and heartburn. High iron stores may also be associated with heart disease, some cancers and Alzheimer's disease, according to the University of Maryland Medical Center. Ingesting too much iron over time can lead to diabetes, liver damage, vomiting, bloody diarrhea and even death. Always chat with your doctor before taking iron supplements."/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

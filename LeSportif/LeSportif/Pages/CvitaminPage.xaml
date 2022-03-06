@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LeSportif.Pages.CvitaminPage">
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="Auto,*,Auto" Padding="0,0,0,0">
+            <StackLayout Margin="10,10,0,0">
+                <Image Source="vitaminc"  Grid.ColumnSpan="3"    />
+            </StackLayout>
+
+            <StackLayout Margin="15,600,15,0">
+
+                <Label Text="The benefits of Vitamin C :" Grid.Row="4" Grid.Column="0" TextColor="DarkRed" FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="5" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None" 
+                       VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                       Text="Study finds that vitamin C may help improve the quality of life in people over 50 years of age. Vitamin C can help improve muscle mass later in life, according to a new study published in the Journal of Nutrition."  />
+                <Label Text="Is vitamin C good for muscle growth? :" Grid.Row="6" Grid.Column="0" TextColor="DarkRed" FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="7" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None" 
+                       VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                       Text="Vitamin C is vital for cell growth and tissue development. That means people should see the effects in muscle growth. And with age, vitamin C may be even more critical to muscle growth. Persons over 50, particularly males, retain more muscle mass when taking a vitamin C supplement"/>
+                <Label Text="Should I take vitamin C before or after workout?" Grid.Row="8" Grid.Column="0" TextColor="DarkRed" FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="9" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None" 
+                       VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                        Text="Recent studies, summarized in this article, show that taking vitamin C pre- or post-workout can minimize the catabolic stress response and speed recovery. Take 1000-3000mg (1-3g) of vitamin C in divided doses throughout the day, making sure to take 1000mg just before or just after your workout."/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+   
+</ContentPage>

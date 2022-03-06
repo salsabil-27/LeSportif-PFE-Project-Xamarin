@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LeSportif.Pages.ProteinPage">
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="Auto,*,Auto" Padding="0,0,0,0">
+            <StackLayout  Margin="30,10,30,0">
+                
+                   <Image Source="prot1"  Grid.ColumnSpan="15" />
+                
+            </StackLayout>
+            
+            <StackLayout Margin="15,465,5,0">
+
+                <Label Text="What Protein Is and Why It's Important ?" Grid.Row="4" Grid.Column="0" TextColor="#8B4513" FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="5" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None" VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                        Text="Before we work out how much protein you need, let's first break down exactly what it is. Put simply, protein is a macronutrient (a nutrient that we need in larger quantities) that is built from amino acids, which are stitched together into long chains. Some of these chains your body can make naturally – known as 'non-essential' – and some of which it can't. These are called 'essential' amino acids and you need to source them from food. When you chow down on a chicken breast your body breaks proteins down into their constituent amino acids, which it then uses to build everything from new muscle to organs and hair."/>
+                <Label  Grid.Row="6" Grid.Column="0" TextColor="#8B4513" FontAttributes="Bold" FontSize="25"
+                           Text="Why Protein Is Important for Building Muscle ?"/>
+                <Label Grid.Row="7" Grid.Column="0"  VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0" TextColor="Black" FontSize="Body" FontAttributes="None"
+                       Text="To build muscle, your body needs to synthesise more muscle protein than it breaks down, which is why anyone looking to build muscle needs to make sure they're getting enough protein, as well as making sure the work they're doing in the weights room is right too. It's not just us saying that, there's a body of research that confirms the part protein plays in building muscle. A study published in the journal Nutrients, for example, found that 'protein intake was shown to promote additional gains in lean body mass beyond those observed with resistance exercise alone.' "/>
+                <Label  Grid.Row="8" Grid.Column="0" TextColor="#8B4513" FontAttributes="Bold" FontSize="25"
+                           Text="Why Protein Is Important for Weight Loss ?"/>
+                <Label Grid.Row="9" Grid.Column="0"  VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0" TextColor="Black" FontSize="Body" FontAttributes="None"
+                       Text="As well as being good for building strength, protein also plays an important role in losing weight. Evidence suggests that eating protein can both increase the number of calories you burn, by stimulating your metabolic rate, as well as reduce your appetite, meaning you're less likely to put on pounds in the first place. What's more, a study by researchers at Maastricht University reported that even a modest increase in protein, from 15% to 18% of calories, reduced the amount of fat people regained after weight loss by 50%"/>
+                <Label  Grid.Row="10" Grid.Column="0" TextColor="#D2691E" FontAttributes="Bold" FontSize="25"
+                        Text="For Vegans and Vegetarians:"/>
+                <Image Source="prot2" Grid.Row="11" Grid.Column="0"  Margin="0,10,0,0"/>
+                
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
