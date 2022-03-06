@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LeSportif.Pages.CalciumPage">
+    
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="Auto,*,Auto" Padding="0,0,0,0">
+            <StackLayout Margin="10,5,0,0">
+                <Image Source="calcium"  Grid.ColumnSpan="3"    />
+            </StackLayout>
+            
+            <StackLayout Margin="15,590,5,0">
+
+            <Label Text="The benefits of calcium :" Grid.Row="4" Grid.Column="0" TextColor="CadetBlue" FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="5" Grid.Column="0" Text="Your body needs calcium to build and maintain strong bones. Your heart, muscles and nerves also need calcium to function properly. Some studies suggest that calcium, along with vitamin D, may have benefits beyond bone health: perhaps protecting against cancer, diabetes and high blood pressure." 
+                     TextColor="Black" FontSize="Body" FontAttributes="None" 
+                      VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0" />
+                    <Label Text="Calcium supplements: What you need to know" Grid.Row="6" Grid.Column="0" TextColor="CadetBlue" FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="7" Grid.Column="0" Text="While food is the best source of calcium, making up any shortfall in your diet with supplements is another option. But it's important not to take too much. Calcium citrate is a highly absorbable calcium compound.  Calcium ascorbate and calcium carbonate are not as easily absorbed as calcium citrate."
+                         TextColor="Black" FontSize="Body" FontAttributes="None" 
+                         VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0" />
+                <Label Grid.Row="8" Grid.Column="0" Text="Be smart about calcium supplements :" TextColor="#7393B3" FontAttributes="Bold" FontSize="18"/>
+                <Label  Grid.Row="9" Grid.Column="0" Text="  - Don't take more than 500 mg at a time. Your body can only absorb a limited amount of calcium at one time, so it is best to consume calcium in small doses throughout the day.
+                                                             - Don't take more than the recommended amount for your age group. Take into account the amount of calcium you get from food. And remember: more isn't better; it may damage the heart and have other negative health effects.
+                                                             - Take your calcium supplement with food. All supplemental forms of calcium are best absorbed when taken with food. If it's not possible to take your supplement with food, choose calcium citrate. Purity is important. It's best to choose calcium supplements with labels that state 'purified' or, if you're in the U.S., have the USP (United States Pharmacopeia) symbol. Avoid supplements made from unrefined oyster shell, bone meal, or dolomite that don't have the USP symbol because they may contain high levels of lead or other toxic metals.
+                                                              - Be aware of side effects. Some people do not tolerate calcium supplements as well as others and experience side effects such as acid rebound, gas, and constipation. For acid rebound, switch from calcium carbonate to calcium citrate. For gas or constipation, try increasing your intake of fluids and high-fiber foods."
+                       TextColor="Black" FontSize="Body" FontAttributes="None" 
+                      VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"/>
+
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

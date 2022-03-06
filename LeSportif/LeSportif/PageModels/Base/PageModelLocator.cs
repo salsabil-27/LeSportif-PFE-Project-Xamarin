@@ -27,6 +27,15 @@ namespace LeSportif.PageModels.Base
             Register<FoodPageModel, FoodPage>();
             Register<ProfilPageModel, ProfilPage>();
             Register<GymPageModel, GymPage>();
+            Register<CalciumPageMode, CalciumPage >();
+            Register<ZincPageModel, ZincPage >();
+            Register<MagnesiumPageModel, MagnesiumPage >();
+            Register<IronPageModel, IronPage >();
+            Register<ProteinPageModel, ProteinPage >();
+            Register<Omega3PageModel, Omega3Page >();
+            Register<CvitaminPageModel, CvitaminPage >();
+            Register<EvitaminPageModel, EvitaminPage>();
+
 
             // Register Services (registered as Singletons by default)
             _container.Register<INavigationService, NavigationService>();

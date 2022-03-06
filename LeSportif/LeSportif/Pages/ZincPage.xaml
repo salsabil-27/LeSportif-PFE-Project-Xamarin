@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LeSportif.Pages.ZincPage">
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="Auto,*,Auto" Padding="0,0,0,0">
+            <StackLayout Margin="10,8,0,0">
+                <Image Source="zinc"  Grid.ColumnSpan="3"    />
+            </StackLayout>
+
+            <StackLayout Margin="15,465,5,0">
+
+                <Label Text="The benefits of zinc :" Grid.Row="4" Grid.Column="0" TextColor="#A95C68" FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="5" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None" 
+                       VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                       Text="Zinc may effectively reduce inflammation, boost immune health, reduce your risk of age-related diseases, speed wound healing and improve acne symptoms."  />
+                <Label  Grid.Row="6" Grid.Column="0" TextColor="#A95C68" FontAttributes="Bold" FontSize="25"
+                           Text="Potential Benefits of Zinc Supplements :"/>
+                <Label Grid.Row="7" Grid.Column="0"  VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0" TextColor="Black" FontSize="Body" FontAttributes="None"
+                       Text="For certain people, zinc supplements may help shorten the duration of colds, manage blood sugar levels, and boost heart health. There are some risks to know about too. Unless you're at risk for a zinc deficiency, you likely haven't given much thought to your zinc intake. That's because the body doesn't require much zinc, and most people are able to acquire enough through their diet and a multivitamin, according to Mount Sinai. The recommended dietary allowance for adult women is 8 milligrams (mg) per day and 11 mg for men, according to the National Institutes of Health (NIH). That amount can come from zinc-rich foods, such as oysters, red meat, crab, and lobster, or from supplements. There is, however, some research that suggests taking zinc in higher doses in supplement form may offer certain benefits for certain individuals. Most of this evidence involves consuming zinc at much higher doses than you could realistically expect from food. Unless you're downing a few oysters every day, it'd be difficult to take in more than 40 mg of zinc per day, says Trista Best, RD, MPH, an environmental health specialist and consultant with Balance One Supplements (a company that sells supplements) based in Dalton, Georgia." />
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

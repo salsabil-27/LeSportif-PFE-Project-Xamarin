@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LeSportif.Pages.Omega3Page">
+
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="Auto,*,Auto" Padding="0,0,0,0">
+            <StackLayout Margin="15,9,5,0">
+                <Image Source="omega3"  Grid.ColumnSpan="3"    />
+            </StackLayout>
+
+            <StackLayout Margin="15,610,5,0">
+                <Label Text="Omega-3s Help Fuel Muscle Growth :" Grid.Row="4" Grid.Column="0" TextColor="#4169E1" FontAttributes="Bold" FontSize="23"/>
+                <Label Grid.Row="5" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None" VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                       Text="They found that omega-3s increased the subjects' muscle-building response to insulin and amino acids, both of which are released in the body during exercise. It seems having a higher amount of omega-3 fatty acids in the muscle cell primes it for protein synthesis" />
+                <Label Text="2 Reasons to Take Omega-3s Before Your Next Workout:" Grid.Row="6" Grid.Column="0" TextColor="#4169E1" FontAttributes="Bold" FontSize="23"/>
+                <Label Text="-Reduce Inflammation, Speed Recovery :" Grid.Row="7" Grid.Column="0" TextColor="#B0C4DE" FontAttributes="Bold" FontSize="19"/>
+                <Label Grid.Row="8" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None" VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                         Text="The omega-3s EPA and DHA, which are found in marine sources like fish, algae and krill are anti-inflammatory by design. And seeing as how working out is itself an inflammatory activity, adding omega-3s might be just the thing you need to ward off muscle soreness, or what those in the training world call delayed onset muscle soreness (DOMS). DOMS can occur one to several days after strenuous exercise and significantly impact your ability to keep training at a high level."  />
+                <Label Text="-Feed the Body's Furnace and Burn the Fat :" Grid.Row="9" Grid.Column="0" TextColor="#B0C4DE" FontAttributes="Bold" FontSize="19"/>
+                <Label Grid.Row="10" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None" VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                         Text="Many people start working out with the goal of losing weight. According to a study in the Journal of the International Society of Sports Nutrition, omega-3s can help you burn fat by using it as energy. The same rule applies like it did for protein synthesis that the more omega-3s you have the better your body function as it burns more fat for energy as you exercise. In this study, 44 men and women received either 4 grams per day of safflower oil or 4 grams per day of fish oil (1600 mg EPA and 800 mg DHA). All tests were repeated following 6 weeks of treatment. Researchers found that those who supplemented with fish oil significantly increased lean mass and decreased fat mass."  />
+                <Label  Grid.Row="11" Grid.Column="0" TextColor="#DDA0DD" FontAttributes="Bold" FontSize="25"
+                        Text="For Vegans and Vegetarians:"/>
+                <Image Source="omega3nonseafood" Grid.Row="12" Grid.Column="0"  Margin="0,10,0,0"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

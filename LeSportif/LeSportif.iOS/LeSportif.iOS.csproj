@@ -151,4 +151,37 @@
   <ItemGroup>
     <BundleResource Include="Resources\password.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\magniesium.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\prot1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\prot2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\zinc.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\calcium.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\omega3nonseafood.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\omega3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Evitamin.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Emitamin1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\iron.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\vitaminc.PNG" />
+  </ItemGroup>
 </Project>
