@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LeSportif.Pages.EvitaminPage">
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="Auto,*,Auto" Padding="0,0,0,0">
+            <Label HorizontalOptions="Center" Grid.Row="0" Text="Vitamin E Sources" TextColor="Green" FontAttributes="Bold" FontSize="25"/>
+            <StackLayout Margin="20,46,0,0">
+                
+                <Image Source="Evitamin"  Grid.ColumnSpan="3" />
+                <Image Source="Evitamin1" Grid.ColumnSpan="3"/>
+
+            </StackLayout>
+
+            <StackLayout Margin="15,512,5,0">
+                <Label Text="What Is Vitamin E?" Grid.Row="4" Grid.Column="0" TextColor="Green"  FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="5" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None" 
+                       VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                         Text="Vitamin E is an essential vitamin, meaning that the body cannot produce it so it must be obtained from dietary sources. Vitamin E is a fat-soluble vitamin, and in the body it is found predominantly in cell membranes. The term 'vitamin E' is actually a generic term for a group of complex chemicals referred to as tocotrienols and tocopherols, including alpha, beta, gamma, and delta tocopherol, with alpha-tocopherol being the most abundant" />
+                <Label Text="Vitamin E and muscle growth :" Grid.Row="6" Grid.Column="0" TextColor="Green" FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="7" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None" 
+                       VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                       Text="Vitamin E is critical for building strong muscles. It plays a vital role in repairing the plasma membrane of a cell. This is particularly essential for muscle cells. The plasma membrane of these cells tears more frequently."/>
+                <Label Text="Should I take vitamin E before or after workout?" Grid.Row="8" Grid.Column="0" TextColor="Green" FontAttributes="Bold" FontSize="25"/>
+                <Label Grid.Row="9" Grid.Column="0" TextColor="Black" FontSize="Body" FontAttributes="None" 
+                       VerticalOptions="End" HorizontalOptions="Start" Padding="15,0,0,0"
+                        Text="Taking an antioxidant supplement before or immediately after your workout can dramatically decrease the free radicals, which means quicker recovery and better gains. One of the most important and effective antioxidants is Vitamin E." />
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

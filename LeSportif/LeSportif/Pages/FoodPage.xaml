@@ -18,14 +18,14 @@
          <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" Padding="4,5,4,5">
 
        <!-- button -->
-                <Button x:Name="zinc"  Grid.Row="0" Grid.Column="0" Text="Food Rich With Zinc"  FontSize="Small"   HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Zinc_Clicked"/>
-                <Button x:Name="Calcium"  Grid.Row="0" Grid.Column="1" Text="Food Rich With Calcium" FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Calcium_Clicked"/>
-                <Button x:Name="magnesium" Grid.Row="2" Grid.Column="0" Text="Food Rich With magnesium" FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="magnesium_Clicked" />
-                <Button x:Name="Iron" Grid.Row="2" Grid.Column="1" Text="Food Rich With Iron " FontSize="Small" HeightRequest="100" CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Iron_Clicked" />
-                <Button x:Name="protein"  Grid.Row="4" Grid.Column="0" Text="Food Rich With protein "  FontSize="Small"  HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="protein_Clicked" />
-                <Button x:Name="vprot"  Grid.Row="4" Grid.Column="1" Text="Food Rich With vegetable-protein " FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="vprot_Clicked"/>
-                <Button x:Name="Evitamin"  Grid.Row="6" Grid.Column="0" Text="Food Rich With vitamin E" FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Evitamin_Clicked" />
-                <Button x:Name="Cvitamin"  Grid.Row="6" Grid.Column="1" Text="Food Rich With vitamin C" FontSize="Small" HeightRequest="100" CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black"  Clicked="Cvitamin_Clicked"/>
+                <Button x:Name="zinc"  Grid.Row="0" Grid.Column="0" Text="Food Rich in Zinc"  FontSize="Small"   HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Zinc_Clicked"/>
+                <Button x:Name="Calcium"  Grid.Row="0" Grid.Column="1" Text="Food Rich in Calcium" FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Calcium_Clicked"/>
+                <Button x:Name="magnesium" Grid.Row="2" Grid.Column="0" Text="Food Rich in magnesium" FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="magnesium_Clicked" />
+                <Button x:Name="Iron" Grid.Row="2" Grid.Column="1" Text="Food Rich in Iron " FontSize="Small" HeightRequest="100" CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Iron_Clicked" />
+                <Button x:Name="protein"  Grid.Row="4" Grid.Column="0" Text="Food Rich in protein "  FontSize="Small"  HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="protein_Clicked" />
+                <Button x:Name="Omega3"  Grid.Row="4" Grid.Column="1" Text="Food Rich in Omega 3 " FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Omega3_Clicked"/>
+                <Button x:Name="Evitamin"  Grid.Row="6" Grid.Column="0" Text="Food Rich in vitamin E" FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Evitamin_Clicked" />
+                <Button x:Name="Cvitamin"  Grid.Row="6" Grid.Column="1" Text="Food Rich in vitamin C" FontSize="Small" HeightRequest="100" CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black"  Clicked="Cvitamin_Clicked"/>
                 
           </Grid>
           

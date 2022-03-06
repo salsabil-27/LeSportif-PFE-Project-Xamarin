@@ -24,8 +24,8 @@
 
                 <StackLayout>
 
-                    <StackLayout  Padding="10" Margin="30" Orientation="Horizontal" HorizontalOptions="Center">
-                        <Label Text="It's NOT a Diet It's a Lifestyle change" TextColor="Black"  FontSize="Title" 
+                    <StackLayout  Padding="10" Margin="20" Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="It's NOT a Diet It's a Lifestyle change" TextColor="Black"  FontSize="27" 
                                 FontAttributes="Italic"  HorizontalTextAlignment="Center" TextDecorations="Underline"  />
                     </StackLayout>
 
