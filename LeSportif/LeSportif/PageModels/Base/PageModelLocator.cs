@@ -23,7 +23,7 @@ namespace LeSportif.PageModels.Base
             Register<LoginPageModel, LoginPage>();
             Register<AcceuilPageModel, AcceuilPage>();
 
-            Register<CaloriesPageModel, CaloriesPage>();
+            Register<CaloriesPageModel,CaloriesPage >();
             Register<FoodPageModel, FoodPage>();
             Register<ProfilPageModel, ProfilPage>();
             Register<GymPageModel, GymPage>();

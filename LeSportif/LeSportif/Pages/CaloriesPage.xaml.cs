@@ -1,5 +1,8 @@
-﻿using System;
+﻿using LeSportif.PageModels;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,15 +12,20 @@ using Xamarin.Forms.Xaml;
 
 namespace LeSportif.Pages
 {
+    
     [XamlCompilation(XamlCompilationOptions.Compile)]
+    
     public partial class CaloriesPage : ContentPage
     {
 
         public double kcal;
         public double Bmi;
+
+
         public CaloriesPage()
         {
             InitializeComponent();
+           
         }
         private async void Calculate_Clicked(object sender, EventArgs e)
         {
@@ -32,23 +40,23 @@ namespace LeSportif.Pages
                     if (woman.IsChecked)
                     {
                         kcal = (10 * Weight) + (6.25 * Height) - (5 * Age) - 161;
-                        
+
                     }
                     else
                     {
                         kcal = (10 * Weight) + (6.25 * Height) - (5 * Age) + 5;
-                        
+
                     }
                     await DisplayAlert("Result", $"Your daily calorie requirement are:{kcal}", "ok");
 
                 }
                 catch (Exception)
-                {  
-                   await DisplayAlert("Error", "please fill all the information", "ok"); 
+                {
+                    await DisplayAlert("Error", "please fill all the information", "ok");
                 }
-               
+
             }
-           
+
         }
 
 
@@ -74,15 +82,18 @@ namespace LeSportif.Pages
                         resultat = "You are obese";
                     DisplayAlert("Result", $"Your BMI Is :{Bmi}", "ok", resultat);
                 }
-                   catch (Exception )
+                catch (Exception)
                 {
-                    
+
                 };
             }
-            else 
+            else
             { DisplayAlert("Error", "please fill all the information", "ok"); }
 
 
         }
+
+
+
     }
 }

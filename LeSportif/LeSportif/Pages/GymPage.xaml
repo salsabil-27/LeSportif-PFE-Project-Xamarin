@@ -1,8 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:extensions="http://xamarin.com/schemas/2020/toolkit"
              x:Class="LeSportif.Pages.GymPage"
-              NavigationPage.HasNavigationBar="False">
-   
-   
+              NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="gymBg">
+
+    <Grid>
+        <StackLayout Padding="0" Margin="8,50,8,0" HorizontalOptions="FillAndExpand">
+            <Frame  BackgroundColor="Transparent" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
+
+                <StackLayout>
+                    
+                    <StackLayout Margin="40">
+                        <StackLayout Padding="8,5,7,0">
+                            <Label  Text="Gym equipment guide for beginners => Just scan the QR code which is on the machine" TextColor="#A9A9A9" FontSize="23" 
+                       FontAttributes="Bold"  VerticalOptions="End" HorizontalOptions="Center" />
+                        </StackLayout>
+
+                        <StackLayout  Padding="40,35,40,0">
+
+                            <Image  VerticalOptions="End" HorizontalOptions="Center" Source="QRCODE" />
+                            
+                        </StackLayout>
+                        <StackLayout Padding="0,0,0,0">
+                            <Button x:Name="Scan" Text="Scan the QR code" TextColor="Black" BackgroundColor="#A9A9A9" CornerRadius="30" Clicked="Scan_Clicked" 
+                              VerticalOptions="End" HorizontalOptions="Center" HeightRequest="50" WidthRequest="200" Margin="0,40,0,0"/>
+                        </StackLayout>
+                        </StackLayout>
+                    
+                </StackLayout>
+                
+            </Frame>
+        </StackLayout>
+    </Grid>
+
+
+
+
+
 </ContentPage>

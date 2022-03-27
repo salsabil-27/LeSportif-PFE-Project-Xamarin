@@ -4,71 +4,93 @@
              x:Class="LeSportif.Pages.CaloriesPage"
              BackgroundImageSource="call"
               NavigationPage.HasNavigationBar="False">
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <Grid>
 
-    <Grid>
+            <BoxView>
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="SlateGray" Offset="0"></GradientStop>
+                        <GradientStop Color="Transparent" Offset="0.5"></GradientStop>
+                        <GradientStop Color="SlateGray" Offset="1"></GradientStop>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
 
-        <BoxView>
-            <BoxView.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="SlateGray" Offset="0"></GradientStop>
-                    <GradientStop Color="Transparent" Offset="0.5"></GradientStop>
-                    <GradientStop Color="SlateGray" Offset="1"></GradientStop>
-                </LinearGradientBrush>
-            </BoxView.Background>
-        </BoxView>
+            
 
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center"/>
+            <StackLayout Padding="0" Margin="5,20,5,0" HorizontalOptions="FillAndExpand">
+                
 
-        <StackLayout Padding="0" Margin="5,90,5,0" HorizontalOptions="FillAndExpand">
-            <Frame  BackgroundColor="Transparent" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
-
-                <StackLayout>
-
-                    <StackLayout  Padding="10" Margin="20" Orientation="Horizontal" HorizontalOptions="Center">
-                        <Label Text="It's NOT a Diet It's a Lifestyle change" TextColor="Black"  FontSize="27" 
+                        <StackLayout  Padding="15" Margin="10" Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="It's NOT a Diet It's a Lifestyle change" TextColor="Black"  FontSize="29" 
                                 FontAttributes="Italic"  HorizontalTextAlignment="Center" TextDecorations="Underline"  />
-                    </StackLayout>
+                        </StackLayout>
 
-                    <StackLayout Padding="0" Margin="10,10">
+                        <StackLayout Padding="0" Margin="10,10">
 
-                        <Frame BackgroundColor="LightGray" BorderColor="LightGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
-                            <StackLayout Orientation="Horizontal">
-                              
-                                <Entry x:Name="age" Placeholder="Age" PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                    <Frame BackgroundColor="LightGray"  Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                <StackLayout Orientation="Horizontal">
+                                 <Entry  x:Name="age" Placeholder="How old are you?" PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="15,0,20,0"
                                              TextColor="Black" Keyboard="Numeric"/>
-                            </StackLayout>
-                        </Frame>
+                                </StackLayout>
+                            </Frame>
 
-                        <Frame BackgroundColor="LightGray" BorderColor="LightGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
-                            <StackLayout Orientation="Horizontal">
-
-                                <Entry x:Name="weight"  Placeholder="Weight (kg)"  PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                    <Frame BackgroundColor="LightGray" Margin="0,15,0,0" Padding="10" HorizontalOptions="FillAndExpand" CornerRadius="60">
+                                <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="kg" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+                            <Entry x:Name="weight"  Placeholder="Weight"  PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
                                            TextColor="Black" Keyboard="Numeric" />
-                                <Entry x:Name="height"  Placeholder="Height (cm)"  PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
+                                    </StackLayout>
+                            </Frame>
+                    <Frame BackgroundColor="LightGray"  Margin="0,15,0,0" Padding="10" HorizontalOptions="FillAndExpand" CornerRadius="50" >
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                <Image Source="cm" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+                            <Entry x:Name="height"  Placeholder="Height"  PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
                                            TextColor="Black" Keyboard="Numeric"/>
-                            </StackLayout>
-                        </Frame>
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
 
-                            <RadioButton x:Name="man" Content="Man" FontAttributes="Bold" FontSize="Large" BackgroundColor="Transparent" TextColor="Black" Margin="19" />
-                            <RadioButton x:Name="woman" Content="Woman"  FontAttributes="Bold" FontSize="Large" BackgroundColor="Transparent" TextColor="Black" Margin="19"/>
                         </StackLayout>
-                        <StackLayout  >
-                           
-                            <Button x:Name="calculate" Text="Colories needs" BackgroundColor="CadetBlue" TextColor="White" FontAttributes="Bold" FontSize="Default" CornerRadius="30" Clicked="Calculate_Clicked" />
-                            
-                        </StackLayout>
-                        <StackLayout Padding="20">
-                            <Button x:Name="BMI" Text="BMI" BackgroundColor="CadetBlue" TextColor="White"  FontAttributes="Bold" FontSize="Default" CornerRadius="30" Clicked="BMI_Clicked"  />
+                    </Frame>
+                    <StackLayout  HorizontalOptions="Fill" >
+                        <Label Text="Your Gender Is!"  FontAttributes="Bold" FontSize="Large" TextColor="Black" TextDecorations="Underline" Padding="10" />
                     </StackLayout>
+                   <Frame BackgroundColor="Transparent" BorderColor="Black" CornerRadius="30" Margin="30,0,30,0" Padding="10">
+                        
+                      <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="10" >
+                           <Frame BackgroundColor="DarkGreen" HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="0" Margin="0">
+                                <Image Source="male" Aspect="AspectFill" Margin="0"  />
+                            </Frame>
+                        <RadioButton x:Name="man"  BackgroundColor="Transparent"   />
+                        <Frame BackgroundColor="DarkRed" HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="0" Margin="0">
+                                <Image Source="female" Aspect="AspectFill" Margin="0" />
+                        </Frame>
+                          <RadioButton x:Name="woman"  BackgroundColor="Transparent"  CornerRadius="50"/>
+                      </StackLayout>
 
-                </StackLayout>
+                   </Frame>
+
+                         <StackLayout Padding="10" Margin="0,10,0,0">
+
+                                <Button x:Name="calculate" Text="Colories needs" BackgroundColor="CadetBlue" TextColor="White" FontAttributes="Bold" FontSize="Default" CornerRadius="30" Clicked="Calculate_Clicked" Padding="10"/>
+
+                            </StackLayout>
+                            <StackLayout Padding="7">
+                                <Button x:Name="BMI" Text="BMI" BackgroundColor="CadetBlue" TextColor="White"  FontAttributes="Bold" FontSize="Default" CornerRadius="30" Clicked="BMI_Clicked"  />
+                            </StackLayout>
+                           </StackLayout>
 
 
-                </StackLayout>
+             </StackLayout>
 
-            </Frame>
-        </StackLayout>
-    </Grid>
+             
 
+            
+            
+
+        </Grid>
+    </ScrollView>
 </ContentPage>
