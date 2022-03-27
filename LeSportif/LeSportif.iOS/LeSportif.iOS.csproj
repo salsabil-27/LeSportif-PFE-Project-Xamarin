@@ -184,4 +184,25 @@
   <ItemGroup>
     <BundleResource Include="Resources\vitaminc.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\QRCODE %282%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gymBg.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cm.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kg.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\female icon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\male icon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\call.PNG" />
+  </ItemGroup>
 </Project>

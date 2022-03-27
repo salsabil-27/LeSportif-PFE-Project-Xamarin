@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pinch="clr-namespace:Xamarin.Forms.PinchZoomImage;assembly=Xamarin.Forms.PinchZoomImage"
              x:Class="LeSportif.Pages.CvitaminPage">
     <ScrollView VerticalScrollBarVisibility="Never">
         <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="Auto,*,Auto" Padding="0,0,0,0">
             <StackLayout Margin="10,10,0,0">
-                <Image Source="vitaminc"  Grid.ColumnSpan="3"    />
+                <pinch:PinchZoom>
+                    <pinch:PinchZoom.Content>
+                        <Image Source="vitaminc"  Grid.ColumnSpan="3"    />
+                    </pinch:PinchZoom.Content>
+                </pinch:PinchZoom>
+               
             </StackLayout>
 
             <StackLayout Margin="15,600,15,0">
