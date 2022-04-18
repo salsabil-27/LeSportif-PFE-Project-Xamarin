@@ -15,6 +15,8 @@ namespace LeSportif.Pages
         public ProfilPage()
         {
             InitializeComponent();
+
+
         }
     }
 }

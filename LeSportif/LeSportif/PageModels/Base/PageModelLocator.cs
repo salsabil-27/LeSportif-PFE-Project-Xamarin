@@ -35,7 +35,12 @@ namespace LeSportif.PageModels.Base
             Register<Omega3PageModel, Omega3Page >();
             Register<CvitaminPageModel, CvitaminPage >();
             Register<EvitaminPageModel, EvitaminPage>();
-
+            Register<ChestPressPageModel, ChestPressPage>();
+            Register<LeGPressPageModel, LeGPressPage>();
+            Register<LyingLegPageModel, LyingLegPage>();
+            Register<SHPageModel, SHPage>();
+            
+            
 
             // Register Services (registered as Singletons by default)
             _container.Register<INavigationService, NavigationService>();

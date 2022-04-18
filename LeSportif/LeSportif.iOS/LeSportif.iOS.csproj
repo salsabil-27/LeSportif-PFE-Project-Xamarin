@@ -205,4 +205,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\call.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LegPress.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lyingLeg.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shoulder.PNG" />
+  </ItemGroup>
 </Project>

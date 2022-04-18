@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:Pages="clr-namespace:LeSportif.Pages"
               xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
-            x:Class="LeSportif.Pages.AcceuilPage"
+            x:Class="LeSportif.Pages.AcceuilPage"         
              SelectedTabColor="#A95C68"
              NavigationPage.HasNavigationBar="True">
 

@@ -19,43 +19,53 @@ namespace LeSportif.Pages
             InitializeComponent();
         }
 
-        public string Legs;
-        public string Shoulder;
-        public string M;
-        
+       
 
         private async void Scan_Clicked(object sender, EventArgs e)
         {
             var scan = new ZXingScannerPage();
             
             await Navigation.PushModalAsync(scan);
-
+            
             scan.OnScanResult += (result) =>
             {
 
                 Device.BeginInvokeOnMainThread(async () =>
                 {
-                    await Navigation.PopModalAsync();
-                    await DisplayAlert("This Machine is for:", "" + result.Text, "Go to Video");
-                    await Navigation.PushAsync(new EquipementPage());
+                await Navigation.PopModalAsync();
+                await DisplayAlert("This Machine is for:", "" + result.Text, "Explain how to use it with a video");
+                    try
+                    {
+                        switch (result.Text)
+                        {
+                            case "Qr":
 
+                             default:
+                                break;
+                            case "Lying Leg Curl":
+
+                                await Navigation.PushAsync(new LyingLegPage());
+                                break;
+                            case "Shoulder Press":
+                                await Navigation.PushAsync(new SHPage());
+                                break;
+                            case "Chest Press":
+                                await Navigation.PushAsync(new ChestPressPage());
+                                break;
+                            case "Leg-Press":
+
+                                await Navigation.PushAsync(new LeGPressPage());
+                                break;
+                            
+                        }
+                    }
+                    catch (Exception ) {  }
                 });
+
 
 
             };
         }
-
-    
-       // public void HandleResult(ZXing.Result rawResult)
-        //{ ProcessResult(rawResult.Text); }
-        //private async void ProcessResult(string text)
-       // {
-            //if (text.StartsWith("legs"))
-            //{
-               // await Navigation.PushAsync(new LegsPage());
-           // }
-       // }
-
 
     }
 }
