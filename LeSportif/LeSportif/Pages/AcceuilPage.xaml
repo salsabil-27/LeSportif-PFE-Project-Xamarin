@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:Pages="clr-namespace:LeSportif.Pages"
-              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" xmlns:Pages1="clr-namespace:LeSportif.Pages.Menu"
             android:TabbedPage.ToolbarPlacement="Bottom"
             x:Class="LeSportif.Pages.AcceuilPage"         
              SelectedTabColor="#A95C68"
@@ -19,7 +19,7 @@
     <TabbedPage.Children>
         <NavigationPage Title="Profile" IconImageSource="utilisateur">
             <x:Arguments >
-                <Pages:ProfilPage BindingContext="{Binding ProfilePageModel}"  />
+                <Pages1:FlyoutMenuPage BindingContext="{Binding ProfilePageModel}"  />
             </x:Arguments>
         </NavigationPage>
         <NavigationPage Title="Calories" IconImageSource="calorie.png">

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LeSportif.Pages.Menu.FlyoutMenuPageFlyout"
+             Title="Flyout"
+              NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <ListView x:Name="MenuItemsListView"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemsSource="{Binding MenuItems}">
+            <ListView.Header>
+                <ContentView >
+                    <StackLayout >
+                        <Image Source="fitness.png" 
+                       HorizontalOptions="Fill"
+                       VerticalOptions="Start"
+                       Aspect="AspectFill"/>
+
+
+                    </StackLayout>
+                </ContentView>
+
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+
+                        <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand">
+                            <Grid Padding="5,10">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="*"/>
+
+
+                                </Grid.ColumnDefinitions>
+
+                                <Image  Source="{Binding IconSource}"/>
+                                <Label Grid.Column="1" Text="{Binding Title}  "
+                                  FontSize="20" TextColor="Black" />
+
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
