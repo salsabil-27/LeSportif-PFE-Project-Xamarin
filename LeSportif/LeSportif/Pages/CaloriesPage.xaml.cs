@@ -21,6 +21,7 @@ namespace LeSportif.Pages
         public double kcal;
         public double Bmi;
 
+        
 
         public CaloriesPage()
         {
@@ -32,43 +33,40 @@ namespace LeSportif.Pages
             var Weight = double.Parse(weight.Text);
             var Height = double.Parse(height.Text);
             var Age = int.Parse(age.Text);
+
             if (!string.IsNullOrEmpty(weight.Text) && !string.IsNullOrEmpty(height.Text) && !string.IsNullOrEmpty(age.Text))
             {
-                try
+
+
+                if (woman.IsChecked)
                 {
-
-                    if (woman.IsChecked)
-                    {
-                        kcal = (10 * Weight) + (6.25 * Height) - (5 * Age) - 161;
-
-                    }
-                    else
-                    {
-                        kcal = (10 * Weight) + (6.25 * Height) - (5 * Age) + 5;
-
-                    }
-                    await DisplayAlert("Result", $"Your daily calorie requirement are:{kcal}", "ok");
+                    kcal = (10 * Weight) + (6.25 * Height) - (5 * Age) - 161;
 
                 }
-                catch (Exception)
+                else
                 {
-                    await DisplayAlert("Error", "please fill all the information", "ok");
+                    kcal = (10 * Weight) + (6.25 * Height) - (5 * Age) + 5;
+
                 }
+                await DisplayAlert("Result", $"Your daily calorie requirement are:{kcal}", "ok");
+
 
             }
 
+            else
+            { await DisplayAlert("Error", "Please fill all the information", "ok"); }
+            
         }
 
 
-        private void BMI_Clicked(object sender, EventArgs e)
+        private async void BMI_Clicked(object sender, EventArgs e)
         {
             var Weight = double.Parse(weight.Text);
             var Height = double.Parse(height.Text);
+           
+           
+                if (!string.IsNullOrEmpty(weight.Text) && !string.IsNullOrEmpty(height.Text))
 
-            if (!string.IsNullOrEmpty(weight.Text) && !string.IsNullOrEmpty(height.Text))
-
-            {
-                try
                 {
                     Bmi = Math.Round(Weight / Math.Pow(Height / 100, 2), 2);
                     string resultat = "";
@@ -80,15 +78,11 @@ namespace LeSportif.Pages
                         resultat = "You are overweight";
                     else
                         resultat = "You are obese";
-                    DisplayAlert("Result", $"Your BMI Is :{Bmi}", "ok", resultat);
-                }
-                catch (Exception)
-                {
+                    await DisplayAlert("Result", $"Your BMI Is :{Bmi}", "ok", resultat);
 
-                };
-            }
-            else
-            { DisplayAlert("Error", "please fill all the information", "ok"); }
+                }
+            else { await DisplayAlert("Error", "Please fill all the information", "ok"); }
+            
 
 
         }

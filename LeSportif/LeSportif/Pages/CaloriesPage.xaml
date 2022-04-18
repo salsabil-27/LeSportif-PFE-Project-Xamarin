@@ -3,6 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pagemodels="clr-namespace:LeSportif.PageModels" x:DataType="pagemodels:CaloriesPageModel"
              x:Class="LeSportif.Pages.CaloriesPage"
              BackgroundImageSource="call"
+             xmlns:extensions="http://xamarin.com/schemas/2020/toolkit"
+             extensions:StatusBarEffect.Color="#B5cbcb"
+            
               NavigationPage.HasNavigationBar="False">
     <ScrollView VerticalScrollBarVisibility="Never">
         <Grid>

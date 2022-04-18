@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pinch="clr-namespace:Xamarin.Forms.PinchZoomImage;assembly=Xamarin.Forms.PinchZoomImage"
+             xmlns:extensions="http://xamarin.com/schemas/2020/toolkit"
+             extensions:StatusBarEffect.Color="#B5cbcb"
              x:Class="LeSportif.Pages.ProteinPage">
     <ScrollView VerticalScrollBarVisibility="Never">
         <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="Auto,*,Auto" Padding="0,0,0,0">

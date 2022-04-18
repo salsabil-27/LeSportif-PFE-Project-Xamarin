@@ -2,11 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:extensions="http://xamarin.com/schemas/2020/toolkit" xmlns:pagemodels="clr-namespace:LeSportif.PageModels" x:DataType="pagemodels:LoginPageModel"
              x:Class="LeSportif.Pages.LoginPage"
-            NavigationPage.HasNavigationBar="False" >
+            NavigationPage.HasNavigationBar="False" 
+            extensions:StatusBarEffect.Color="CadetBlue">
 
     <Grid>
         
-       <extensions:MediaElement  Source="https://static.videezy.com/system/resources/previews/000/032/887/original/man-gym-dumbel4.mp4"  Aspect="AspectFill" AutoPlay="True" Volume="0" IsLooping="True" ShowsPlaybackControls="False"
+       <extensions:MediaElement  Source="https://static.videezy.com/system/resources/previews/000/032/887/original/man-gym-dumbel4.mp4
+                                 "  Aspect="AspectFill" AutoPlay="True" Volume="0" IsLooping="True" ShowsPlaybackControls="False"
                                    HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
         <BoxView>
             <BoxView.Background>

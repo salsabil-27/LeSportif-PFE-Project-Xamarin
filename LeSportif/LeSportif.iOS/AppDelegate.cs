@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using LibVLCSharp.Forms.Shared;
 using UIKit;
 using Xamarin.Forms;
 
@@ -23,6 +24,7 @@ namespace LeSportif.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            LibVLCSharpFormsRenderer.Init();
             global::Xamarin.Forms.Forms.Init();
             ZXing.Net.Mobile.Forms.iOS.Platform.Init();
             LoadApplication(new App());
