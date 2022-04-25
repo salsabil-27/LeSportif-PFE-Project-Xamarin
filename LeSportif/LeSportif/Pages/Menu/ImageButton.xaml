@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LeSportif.ImageButton">
+  <ContentView.Content>
+        <Grid RowDefinitions="25,Auto" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Label x:Name="lblIcon" Grid.Row="0"  HorizontalOptions="Center" TextColor="#08457E" 
+                   FontFamily="{StaticResource FontAwesomeSolid}" FontSize="20"  ></Label>
+            <Label x:Name="lblText" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Start"  
+                   TextColor="#202020"></Label>
+        </Grid>
+  </ContentView.Content>
+</ContentView>

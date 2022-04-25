@@ -1,12 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LeSportif.Pages.Menu.StatisticsPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="LeSportif.Pages.Menu.StatisticsPage"
+        Appearing="ContentPage_Appearing"
+             
+      
+               
+              >
+    <StackLayout>
+        <Label Text="Activity Stats"  HorizontalOptions="Center" Grid.Row="2" VerticalOptions="Start" />
+        <ScrollView>
+            <StackLayout>
+                <Label Text= "Daily Progress" HorizontalOptions="Center" />
+                <microcharts:ChartView x:Name = "TodayChart" HeightRequest="250" WidthRequest="250" />
+                <Grid Margin="0,25">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text= "Current Week Progress"  Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" Grid.RowSpan="2"  FontSize="16"/>
+                    <microcharts:ChartView x:Name = "WeekChart"  HeightRequest="150" WidthRequest="150"  Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>
+                    <Label Text= "Current Month Progress" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" Grid.RowSpan="2"  FontSize="16"/>
+                    <microcharts:ChartView x:Name = "MonthChart" HeightRequest="150" WidthRequest="150" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"/>
+
+                </Grid>
+                <Button Text="Log Workout" HeightRequest="50" Pressed="LogWorkout"/>
+                <Button Text= "Log Meal" HeightRequest="50" Pressed="LogMeal" />
+                <Button Text="Log Sleep"   HeightRequest="50" Pressed="LogSleep"/>
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

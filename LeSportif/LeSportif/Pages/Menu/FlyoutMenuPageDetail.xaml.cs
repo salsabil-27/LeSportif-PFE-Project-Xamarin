@@ -15,6 +15,46 @@ namespace LeSportif.Pages.Menu
         public FlyoutMenuPageDetail()
         {
             InitializeComponent();
+            BindingContext = App.appUser;
         }
+        void ContentPage_Appearing(System.Object sender, System.EventArgs e)
+        {
+            resetBinding();
+        }
+
+        void ContentPage_Disappearing(System.Object sender, System.EventArgs e)
+        {
+
+        }
+        void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new EditPage());
+        }
+        private async void btnTimeTable_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("TimeTable");
+        }
+
+        private async void btnSyllabus_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("Syllabus");
+        }
+
+        private async void btnAttendance_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("Attendance");
+        }
+        void resetBinding()
+        {
+            DailyTarget target = App.todaysTarget;
+            this.BindingContext = null;
+            this.BindingContext = App.appUser;
+          // WorkoutGoal.Text = target.workoutTarget.ToString();
+          //calorieSlider.Value = target.calorieTarget;
+       //   sleepSlider.Value = target.sleepTarget;
+
+        }
+
+
     }
 }

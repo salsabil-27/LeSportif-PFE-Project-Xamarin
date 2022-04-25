@@ -28,12 +28,14 @@
                 <Button x:Name="Omega3"  Grid.Row="4" Grid.Column="1" Text="Food Rich in Omega 3 " FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Omega3_Clicked"/>
                 <Button x:Name="Evitamin"  Grid.Row="6" Grid.Column="0" Text="Food Rich in vitamin E" FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" Clicked="Evitamin_Clicked" />
                 <Button x:Name="Cvitamin"  Grid.Row="6" Grid.Column="1" Text="Food Rich in vitamin C" FontSize="Small" HeightRequest="100" CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black"  Clicked="Cvitamin_Clicked"/>
-                
-          </Grid>
-          
-         </Frame> 
+
+
+            </Grid>
+
+        </Frame>
 
 
     </Grid>
+
 
 </ContentPage>

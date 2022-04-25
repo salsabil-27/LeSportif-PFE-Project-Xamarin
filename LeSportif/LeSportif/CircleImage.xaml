@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LeSportif.CircleImage">
+    <ContentView.Content>
+        <StackLayout Padding="0,30,0,0" >
+            <Frame x:Name="frame" HasShadow="True" HeightRequest="80" WidthRequest="80" CornerRadius="100" HorizontalOptions="Center" Padding="0">
+                <Image x:Name="img" Aspect="AspectFill" Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWR7fU-Ju22niixgRowQPqmhmMbv-4aKkcJQ"/>
+            </Frame>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
