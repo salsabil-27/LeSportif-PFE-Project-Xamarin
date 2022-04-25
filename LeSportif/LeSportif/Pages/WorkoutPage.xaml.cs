@@ -16,5 +16,21 @@ namespace LeSportif.Pages
         {
             InitializeComponent();
         }
+        void Save_Button_Pressed(System.Object sender, System.EventArgs e)
+        {
+            try
+            {
+                string type = (string)Workout_Type.SelectedItem;
+                int length = int.Parse(Workout_Time.Text);
+                string notes = Workout_Notes.Text;
+                App.todaysTarget.logWorkout(type, length, notes);
+                Navigation.PopAsync();
+
+            }
+            catch (Exception)
+            {
+                DisplayAlert("Error", "Please fill all the information", "ok");
+            }
+        }
     }
 }

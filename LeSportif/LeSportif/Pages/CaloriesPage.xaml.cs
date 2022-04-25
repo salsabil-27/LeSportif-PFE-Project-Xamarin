@@ -34,9 +34,9 @@ namespace LeSportif.Pages
             var Height = double.Parse(height.Text);
             var Age = int.Parse(age.Text);
 
-            if (!string.IsNullOrEmpty(weight.Text) && !string.IsNullOrEmpty(height.Text) && !string.IsNullOrEmpty(age.Text))
-            {
-
+            //  if (!string.IsNullOrEmpty(weight.Text) && !string.IsNullOrEmpty(height.Text) && !string.IsNullOrEmpty(age.Text))
+            //{
+            try {
 
                 if (woman.IsChecked)
                 {
@@ -51,10 +51,11 @@ namespace LeSportif.Pages
                 await DisplayAlert("Result", $"Your daily calorie requirement are:{kcal}", "ok");
 
 
-            }
+            } catch(Exception)
+            { await  DisplayAlert("Error", "Please fill all the information", "ok"); }
 
-            else
-            { await DisplayAlert("Error", "Please fill all the information", "ok"); }
+           // else
+           // { await DisplayAlert("Error", "Please fill all the information", "ok"); }
             
         }
 
@@ -65,8 +66,10 @@ namespace LeSportif.Pages
             var Height = double.Parse(height.Text);
            
            
+               // if (!string.IsNullOrEmpty(weight.Text) && !string.IsNullOrEmpty(height.Text))
+               try
+                {
                 if (!string.IsNullOrEmpty(weight.Text) && !string.IsNullOrEmpty(height.Text))
-
                 {
                     Bmi = Math.Round(Weight / Math.Pow(Height / 100, 2), 2);
                     string resultat = "";
@@ -80,8 +83,12 @@ namespace LeSportif.Pages
                         resultat = "You are obese";
                     await DisplayAlert("Result", $"Your BMI Is :{Bmi}", "ok", resultat);
 
-                }
-            else { await DisplayAlert("Error", "Please fill all the information", "ok"); }
+                } }
+            catch(Exception)
+            {
+              await DisplayAlert("Error", "Please fill all the information", "ok");
+            }
+           // else { await DisplayAlert("Error", "Please fill all the information", "ok"); }
             
 
 

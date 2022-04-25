@@ -4,17 +4,22 @@
              xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              x:Class="LeSportif.Pages.Menu.StatisticsPage"
         Appearing="ContentPage_Appearing"
-             
-      
-               
-              >
-    <StackLayout>
-        <Label Text="Activity Stats"  HorizontalOptions="Center" Grid.Row="2" VerticalOptions="Start" />
-        <ScrollView>
-            <StackLayout>
-                <Label Text= "Daily Progress" HorizontalOptions="Center" />
-                <microcharts:ChartView x:Name = "TodayChart" HeightRequest="250" WidthRequest="250" />
-                <Grid Margin="0,25">
+             BackgroundColor="WhiteSmoke">
+
+
+
+
+    <StackLayout Margin="0">
+       
+        <ScrollView VerticalScrollBarVisibility="Never">
+            <StackLayout Margin="10">
+                <Label Text="Activity Stats"  HorizontalOptions="Center" Grid.Row="2" VerticalOptions="Start" FontSize="30" FontAttributes="Bold" TextColor="LightBlue"
+                       />
+
+                <Label Text= "Daily Progress" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Italic" />
+
+                <microcharts:ChartView x:Name = "TodayChart" HeightRequest="250" WidthRequest="250" Margin="0,15,0,0"/>
+                <Grid Margin="0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="20" />
                         <RowDefinition Height="*" />
@@ -23,15 +28,17 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Label Text= "Current Week Progress"  Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" Grid.RowSpan="2"  FontSize="16"/>
+                    <Label Text= "Current Week Progress"  Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" Grid.RowSpan="2"  FontSize="14"/>
                     <microcharts:ChartView x:Name = "WeekChart"  HeightRequest="150" WidthRequest="150"  Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>
-                    <Label Text= "Current Month Progress" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" Grid.RowSpan="2"  FontSize="16"/>
+                    <Label Text= "Current Month Progress" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" Grid.RowSpan="2"  FontSize="14"/>
                     <microcharts:ChartView x:Name = "MonthChart" HeightRequest="150" WidthRequest="150" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"/>
 
                 </Grid>
-                <Button Text="Log Workout" HeightRequest="50" Pressed="LogWorkout"/>
-                <Button Text= "Log Meal" HeightRequest="50" Pressed="LogMeal" />
-                <Button Text="Log Sleep"   HeightRequest="50" Pressed="LogSleep"/>
+                <StackLayout Margin="25">
+                    <Button Text="Log Workout" HeightRequest="50" Pressed="LogWorkout" CornerRadius="30" BackgroundColor="LightBlue"/>
+                    <Button Text= "Log Meal" HeightRequest="50" Pressed="LogMeal" CornerRadius="30" BackgroundColor="LightBlue"/>
+                    <Button Text="Log Sleep"   HeightRequest="50" Pressed="LogSleep" CornerRadius="30" BackgroundColor="LightBlue"/>
+                </StackLayout>
 
             </StackLayout>
         </ScrollView>
