@@ -4,21 +4,5 @@
              xmlns:control="http://xamarin.com/schemas/2014/forms/design" xmlns:control1="clr-namespace:LeSportif"
              x:Class="LeSportif.Pages.Menu.FlyoutMenuPageDetail"
              Title="Profile">
-    <ScrollView VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
-
-        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" Padding="30,0">
-
-            <!-- Here add the code that is being explained in all the blocks -->
-            <Frame Grid.Row="0" BorderColor="White" VerticalOptions="Start" HeightRequest="160" HasShadow="False" CornerRadius="20" Margin="0,45,0,20" Padding="0" IsClippedToBounds="True">
-                <Image Source="usercoverture" Aspect="AspectFill"/>
-            </Frame>
-            <Button x:Name="zinc"  Grid.Row="2" Grid.Column="0" Text="Food Rich in Zinc"  FontSize="Small"   HeightRequest="5"  CornerRadius="50" BackgroundColor="#A9A9A9" TextColor="Black" />
-            <Button x:Name="Calcium"  Grid.Row="1" Grid.Column="1" Text="Food Rich in Calcium" FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" />
-            <Button x:Name="magnesium" Grid.Row="1" Grid.Column="0" Text="Food Rich in magnesium" FontSize="Small" HeightRequest="100"  CornerRadius="15" BackgroundColor="#A9A9A9" TextColor="Black" />
-            
-        </Grid>
-
-        
-       
-    </ScrollView>
+    
 </ContentPage>

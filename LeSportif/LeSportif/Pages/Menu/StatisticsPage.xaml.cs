@@ -35,8 +35,10 @@ namespace LeSportif.Pages.Menu
                 new ChartEntry(daily_stats.SleepDeficit)
                 {
                     Label = "Sleep (hrs)",
+                    ValueLabelColor=SKColor.Parse("#2596be"),
                     ValueLabel = App.todaysTarget.actualSleep.ToString(),
-                    Color = SKColor.Parse("#FFAB2D")
+                    Color = SKColor.Parse("#2596be")
+                   
 
                 },
 
@@ -45,14 +47,16 @@ namespace LeSportif.Pages.Menu
                 {
                     Label = "Calories",
                     ValueLabel = App.todaysTarget.actualCalories.ToString(),
-                    Color = SKColor.Parse("#93DBFF")
+                     ValueLabelColor=SKColor.Parse("#E8BFDF"),
+                    Color = SKColor.Parse("#E8BFDF")
                 },
 
                 new ChartEntry(daily_stats.WorkoutDeficit)
                 {
                     Label = "Workout (min)",
                     ValueLabel =  App.todaysTarget.actualWorkout.ToString(),
-                    Color = SKColor.Parse("#D97D54")
+                    ValueLabelColor=SKColor.Parse("#96be25"),
+                    Color = SKColor.Parse("#96be25")
                 }
             };
 
@@ -61,18 +65,19 @@ namespace LeSportif.Pages.Menu
                 new ChartEntry(weekly_stats.SleepDeficit)
                 {
 
-                  Color = SKColor.Parse("#FFAB2D")
+                  Color = SKColor.Parse("#2596be")
                 },
 
 
                 new ChartEntry(weekly_stats.CalorieDeficit)
                 {
-                    Color = SKColor.Parse("#93DBFF")
+
+                    Color = SKColor.Parse("#E8BFDF")
                 },
 
                 new ChartEntry(weekly_stats.WorkoutDeficit)
                 {
-                    Color = SKColor.Parse("#D97D54")
+                    Color = SKColor.Parse("#96be25")
                 }
             };
 
@@ -81,22 +86,22 @@ namespace LeSportif.Pages.Menu
                 new ChartEntry(monthly_stats.SleepDeficit)
                 {
 
-                    Color = SKColor.Parse("#FFAB2D")
+                    Color = SKColor.Parse("#2596be")
                 },
 
 
                 new ChartEntry(monthly_stats.CalorieDeficit)
                 {
-                    Color = SKColor.Parse("#93DBFF")
+                    Color = SKColor.Parse("#E8BFDF")
                 },
 
                 new ChartEntry(monthly_stats.WorkoutDeficit)
                 {
-                    Color = SKColor.Parse("#D97D54")
+                    Color = SKColor.Parse("#96be25")
                 }
             };
 
-            TodayChart.Chart = new RadialGaugeChart { Entries = dailyEntries, LabelTextSize = 40, MaxValue = 100 };
+            TodayChart.Chart = new LineChart { Entries = dailyEntries, LabelTextSize = 30, MaxValue = 100, };
             WeekChart.Chart = new RadialGaugeChart { Entries = weeklyEntries, MaxValue = 100 };
             MonthChart.Chart = new RadialGaugeChart { Entries = monthlyEntries, MaxValue = 100 };
             

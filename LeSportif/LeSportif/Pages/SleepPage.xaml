@@ -2,11 +2,30 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LeSportif.Pages.SleepPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout>
+        <Label Text=" Sleep" Margin = "0,55,0,0" FontSize="30" TextColor="LightBlue" HorizontalOptions="Center" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Entry x:Name = "sleepLength" PlaceholderColor="Black" FontAttributes="Italic" Keyboard = "Numeric" Placeholder="Duration (in hours)"  BackgroundColor="#FFFFF"  ClearButtonVisibility="WhileEditing" Grid.Column="1" Grid.ColumnSpan="7" Grid.Row="2" />
+            <Entry x:Name = "sleepnotes" PlaceholderColor="Black" FontAttributes="Italic" Placeholder="Notes"  BackgroundColor="#FFFFF"  ClearButtonVisibility="WhileEditing" Grid.Column="1" Grid.ColumnSpan="7" Grid.Row="4"  />
+        </Grid>
+
+        <Button Text="Save" Margin = "40,60,40,0" Pressed="Save_Button_Pressed" CornerRadius="30"  HeightRequest="60" BackgroundColor="LightBlue" />
+    </StackLayout>
 </ContentPage>
