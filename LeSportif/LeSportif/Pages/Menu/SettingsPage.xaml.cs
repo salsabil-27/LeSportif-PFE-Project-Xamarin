@@ -15,6 +15,7 @@ namespace LeSportif.Pages.Menu
         public SettingsPage()
         {
             InitializeComponent();
+
         }
     }
 }
