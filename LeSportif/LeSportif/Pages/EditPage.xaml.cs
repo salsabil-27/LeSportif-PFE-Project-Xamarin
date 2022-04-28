@@ -37,8 +37,9 @@ namespace LeSportif.Pages
 
         void Button_Clicked(System.Object sender, System.EventArgs e)
         {
-           App.appUser.name = NameEntry.Text;
-            App.appUser.gender = GenderEntry.Text;
+           
+            App.appUser.name = NameEntry.Text;
+            App.appUser.gender = (string)GenderEntry.SelectedItem;
             App.appUser.height = Convert.ToInt32(HeightEntry.Text);
             App.appUser.weight = Convert.ToInt32(WeightEntry.Text);
             App.todaysTarget.calorieTarget = Convert.ToInt32(CalorieSlider.Value);

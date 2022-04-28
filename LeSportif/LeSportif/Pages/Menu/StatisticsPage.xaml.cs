@@ -101,7 +101,7 @@ namespace LeSportif.Pages.Menu
                 }
             };
 
-            TodayChart.Chart = new LineChart { Entries = dailyEntries, LabelTextSize = 30, MaxValue = 100, };
+            TodayChart.Chart = new RadialGaugeChart { Entries = dailyEntries, LabelTextSize = 30, MaxValue = 100, };
             WeekChart.Chart = new RadialGaugeChart { Entries = weeklyEntries, MaxValue = 100 };
             MonthChart.Chart = new RadialGaugeChart { Entries = monthlyEntries, MaxValue = 100 };
             
@@ -127,12 +127,16 @@ namespace LeSportif.Pages.Menu
 
         void ContentPage_Appearing(System.Object sender, System.EventArgs e)
         {
-            App.appUser.setDailyTarget(App.todaysTarget);
+           App.appUser.setDailyTarget(App.todaysTarget);
 
             //check if its first time launching the app
-          
+            if (App.firstTimeLaunched == true || App.statsPageViewed == false)
+            {
+                //        DisplayAlert("Activity", "This page has buttons where you can log your meals, calories, and sleep. Below there are charts where you can track your progress!", "OK");
+                App.statsPageViewed = true;
+            }
             //want to reload charts in case anything has changed since leaving / coming back to the page
-            loadCharts();
+          loadCharts();
         }
 
         void ContentPage_Disappearing(System.Object sender, System.EventArgs e)

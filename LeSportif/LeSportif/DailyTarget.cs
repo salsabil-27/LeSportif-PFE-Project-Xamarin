@@ -13,7 +13,7 @@ namespace LeSportif
         public int calorieTarget;
         public float sleepTarget;
         public int workoutTarget;
-
+        public int weigthTarget;
         public Workout workout;
         public Sleep sleep;
         public List<Meal> meals;
@@ -22,10 +22,12 @@ namespace LeSportif
         public int actualCalories;
         public float actualSleep;
         public int actualWorkout;
+        public int actualweight;
 
 
         public DailyTarget()
         {
+            this.weigthTarget = 0;
             this.calorieTarget = 0;
             this.sleepTarget = 0;
             this.workoutTarget = 0;

@@ -6,9 +6,8 @@
             extensions:StatusBarEffect.Color="CadetBlue">
 
     <Grid>
-        
-       <extensions:MediaElement  Source="https://static.videezy.com/system/resources/previews/000/032/887/original/man-gym-dumbel4.mp4
-                                 "  Aspect="AspectFill" AutoPlay="True" Volume="0" IsLooping="True" ShowsPlaybackControls="False"
+
+        <extensions:MediaElement x:Name="Bgvieo"  Source="https://static.videezy.com/system/resources/previews/000/032/887/original/man-gym-dumbel4.mp4"  Aspect="AspectFill" AutoPlay="True" Volume="0" IsLooping="True" ShowsPlaybackControls="False"
                                    HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
         <BoxView>
             <BoxView.Background>
@@ -40,36 +39,40 @@
                                     <Image Source="email" Aspect="AspectFill" Margin="0"/>
                                 </Frame>
 
-                                <Entry Placeholder="Email" PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
-                                            Text="{Binding Password}" TextColor="WhiteSmoke"/>
+                                <Entry Placeholder="Email" PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"
+                                            Text="{Binding Email}" TextColor="WhiteSmoke" Keyboard="Email"/>
                             </StackLayout>
                         </Frame>
 
-                        <Frame BackgroundColor="Transparent" BorderColor="White" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
-                            <StackLayout Orientation="Horizontal">
+                      
+                        <Frame BackgroundColor="Transparent" BorderColor="White" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" Margin="0,15,0,0">
+                            <StackLayout Orientation="Horizontal" >
                                 <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
-                                    <Image Source="password" Aspect="AspectFill" Margin="0"/>
+                                    <Image Source="password.png" Aspect="AspectFill" Margin="0"/>
                                 </Frame>
 
-                                <Entry Placeholder="Password" IsPassword="True"  PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"
-                                           Text="{Binding Username}" TextColor="WhiteSmoke"/>
+                                <Entry Placeholder="Password" PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"
+                                            Text="{Binding  Password}" IsPassword="True" TextColor="WhiteSmoke"/>
                             </StackLayout>
                         </Frame>
 
-                        <StackLayout  Orientation="Horizontal">
-                            <CheckBox IsChecked="False" Color="White" />
-                            <Label Text="Remember me" TextColor="White" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
 
-                            <Label Text="Forgot Password" TextColor="White"  HorizontalOptions="EndAndExpand" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                        <StackLayout  Orientation="Horizontal">
+                            <CheckBox IsChecked="False" Color="White" Margin="0,-5,0,0" />
+                            <Label Text="Remember me" TextColor="White" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Padding="0,-5,0,0"/>
+
+                            <Button Text="Forgot Password" TextColor="White"  BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" FontSize="Small"   Command="{Binding  ForgotPassword }" Padding="0,-5,0,0"/>
 
 
                         </StackLayout>
 
-                        <Button Text="SIGN IN" BackgroundColor="CadetBlue" TextColor="White"  CornerRadius="30" Command="{Binding  LoginCommand}" />
+                        <Button Text="SIGN IN" BackgroundColor="CadetBlue" TextColor="White"  CornerRadius="30" Command="{Binding LoginCommand}" Margin="0,-2,0,0"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" 
                                          >
-                            <Label Text="Still Not Connected ?" TextColor="White" FontSize="Small"/>
-                            <Label Text="Sign Up" TextColor="CadetBlue" FontAttributes="Bold" FontSize="Small"/>
+                            <Label Text="Still Not Connected ?" TextColor="White" FontSize="Small" Padding="0,13,-5,0"/>
+                            <Button Text="Sign up" TextColor="CadetBlue"  BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" FontSize="Small"  Command="{Binding SignupCommand  }" />
+
+
                         </StackLayout>
                     </StackLayout>
 
@@ -78,5 +81,5 @@
 
             </Frame>
         </StackLayout>
-        </Grid>
+    </Grid>
 </ContentPage>

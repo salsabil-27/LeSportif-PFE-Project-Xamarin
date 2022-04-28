@@ -3,7 +3,7 @@
     <color name="launcher_background">#FFFFFF</color>
     <color name="colorPrimary">#B5cbcb</color>
     <color name="colorPrimaryDark">#B5cbcb</color>
-    <color name="colorAccent">#367055</color>
+    <color name="colorAccent">#FF5F9EA0</color>
 	
 	
 </resources>

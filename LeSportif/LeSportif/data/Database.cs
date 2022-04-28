@@ -69,12 +69,14 @@ namespace LeSportif.Data
             public int calorieTarget { get; set; }
             public float sleepTarget { get; set; }
             public int workoutTarget { get; set; }
-            public int caloriesLogged { get; set; }
+        
+        public int caloriesLogged { get; set; }
             public float sleepLogged { get; set; }
             public int workoutLogged { get; set; }
             public string notesLogged { get; set; }
-
-        }
+        
+   
+    }
 
     }
 

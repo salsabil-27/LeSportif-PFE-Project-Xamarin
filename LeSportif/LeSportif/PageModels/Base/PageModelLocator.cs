@@ -20,7 +20,10 @@ namespace LeSportif.PageModels.Base
             _viewlookup = new Dictionary<Type, Type>();
 
             // Register Page and Page Models
-            Register<LoginPageModel, LoginPage>();
+         
+           Register<LoginPageModel, LoginPage>();
+            Register<ForgotPasswordPageModel, ForgotPasswordPage>();
+            Register<RegisterPageModel, RegisterPage>();
             Register<AcceuilPageModel, AcceuilPage>();
 
             Register<CaloriesPageModel,CaloriesPage >();
@@ -44,8 +47,8 @@ namespace LeSportif.PageModels.Base
 
             // Register Services (registered as Singletons by default)
             _container.Register<INavigationService, NavigationService>();
-            _container.Register<AccountService, AccountService>();
-
+         
+            _container.Register(DependencyService.Get<IAccountService>());
         }
         public static T Resolve<T>() where T : class
         {
