@@ -223,5 +223,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logofinal_W3x_icon.ico" />
+    <BundleResource Include="Resources\height.png" />
+    <BundleResource Include="Resources\weight.png" />
+    <BundleResource Include="Resources\salle3.PNG" />
   </ItemGroup>
 </Project>
