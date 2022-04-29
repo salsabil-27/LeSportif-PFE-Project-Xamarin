@@ -21,7 +21,7 @@ namespace LeSportif.Pages.Menu
             weekly_stats = new Performance.Weekly(0, 0, 0);
             monthly_stats = new Performance.Monthly(0, 0, 0);
             InitializeComponent();
-             loadCharts();
+            loadCharts();
         }
 
         public async Task loadCharts()
@@ -38,7 +38,7 @@ namespace LeSportif.Pages.Menu
                     ValueLabelColor=SKColor.Parse("#2596be"),
                     ValueLabel = App.todaysTarget.actualSleep.ToString(),
                     Color = SKColor.Parse("#2596be")
-                   
+
 
                 },
 
@@ -101,10 +101,10 @@ namespace LeSportif.Pages.Menu
                 }
             };
 
-            TodayChart.Chart = new LineChart { Entries = dailyEntries, LabelTextSize = 30, MaxValue = 100, };
+            TodayChart.Chart = new RadialGaugeChart { Entries = dailyEntries, LabelTextSize = 30, MaxValue = 100, };
             WeekChart.Chart = new RadialGaugeChart { Entries = weeklyEntries, MaxValue = 100 };
             MonthChart.Chart = new RadialGaugeChart { Entries = monthlyEntries, MaxValue = 100 };
-            
+
         }
 
         public async void LogSleep(System.Object sender, EventArgs e)
@@ -130,7 +130,11 @@ namespace LeSportif.Pages.Menu
             App.appUser.setDailyTarget(App.todaysTarget);
 
             //check if its first time launching the app
-          
+            if (App.firstTimeLaunched == true || App.statsPageViewed == false)
+            {
+                //        DisplayAlert("Activity", "This page has buttons where you can log your meals, calories, and sleep. Below there are charts where you can track your progress!", "OK");
+                App.statsPageViewed = true;
+            }
             //want to reload charts in case anything has changed since leaving / coming back to the page
             loadCharts();
         }

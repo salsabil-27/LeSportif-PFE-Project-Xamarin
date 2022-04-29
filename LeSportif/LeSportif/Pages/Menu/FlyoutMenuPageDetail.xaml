@@ -4,5 +4,84 @@
              xmlns:control="http://xamarin.com/schemas/2014/forms/design" xmlns:control1="clr-namespace:LeSportif"
              x:Class="LeSportif.Pages.Menu.FlyoutMenuPageDetail"
              Title="Profile">
-    
+
+
+    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image  x:Name =" ProfileImage" Source="salle3" Aspect="Fill" HeightRequest="270" VerticalOptions="StartAndExpand">
+
+            </Image>
+
+            <Frame  Grid.Row="1" HasShadow="True" CornerRadius="10" Margin="20,-50,20,0" Padding="18" HeightRequest="220" VerticalOptions="StartAndExpand"  BackgroundColor="AliceBlue">
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0">
+                        <Label x:Name ="Name" Text="{Binding name}" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+
+
+                    </StackLayout>
+                    <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                            <Image Source="weight.png" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center"   />
+                            <Label  x:Name="Weight" Text="{Binding weight}" TextColor="#2C3E50" FontSize="12" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                            <Image Source="height.png" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center"/>
+                            <Label x:Name="Height" Text="{Binding height}" TextColor="#2C3E50" FontSize="12" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                    </Grid>
+                    <Grid Grid.Row="2" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+
+                        </Grid.ColumnDefinitions>
+                        <Button  Clicked="Button_Clicked" Grid.Column="1" Text="Edit" FontSize="20" FontAttributes="Italic"  Grid.Row="0" HorizontalOptions="CenterAndExpand"  CornerRadius="30" HeightRequest="60" BackgroundColor="LightBlue"></Button>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <Frame Grid.Row="2" HasShadow="True" HeightRequest="270" CornerRadius="30" Margin="20" Padding="18" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="AliceBlue" >
+                <Grid RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+
+
+                    </Grid.RowDefinitions>
+
+                    <Label Text="My goals " TextColor="LightBlue" FontSize="25" />
+
+                    <Label x:Name="WorkoutGoalLabel" TextColor="Black" FontAttributes="Italic" Text="Exercise (min):"   Grid.Row="1" Grid.Column="0"></Label>
+                    <Label x:Name="WorkoutGoal" Text="{Binding FitGoal}" TextColor="Black" Grid.Row="1" Grid.Column="1"/>
+                    <Label Text="Calorie Target :" Grid.Row="2" Grid.Column="0" TextColor="Black"/>
+                    <Label x:Name="calorieSlider"   FontSize="15" TextColor="Black" FontAttributes="Italic"    Grid.Row="2" Grid.Column="1"  />
+                    <Label Text="Sleep Target:" Grid.Row="3" Grid.Column="0" TextColor="Black" />
+
+                    <Label x:Name="sleepSlider"   TextColor="Black" FontSize="15"  FontAttributes="Italic"    Grid.Row="3" Grid.Column="1" />
+
+                    <!--Label x:Name="displayLabel" Text = "" Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="5"/-->
+
+                </Grid>
+            </Frame>
+
+        </Grid>
+    </ScrollView>
 </ContentPage>

@@ -7,7 +7,7 @@
 
     <Grid>
         <StackLayout Padding="0,10,0,0">
-            <Frame Grid.Row="5" HasShadow="True" HeightRequest="100" WidthRequest="100" CornerRadius="30" Margin="20" Padding="20" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="AliceBlue" >
+            <Frame Grid.Row="5" HasShadow="True" HeightRequest="120" WidthRequest="100" CornerRadius="30" Margin="20" Padding="20" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="AliceBlue" >
                 <Grid RowSpacing="20">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>

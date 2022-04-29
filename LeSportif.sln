@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeSportif.Android", "LeSpor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeSportif.iOS", "LeSportif\LeSportif.iOS\LeSportif.iOS.csproj", "{CE7EFCE8-DDA2-476E-AD96-230066FA6F94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeSportif", "LeSportif\LeSportif\LeSportif.csproj", "{9F923B12-2FF5-416E-9EAD-79D2D5986B87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeSportif", "LeSportif\LeSportif\LeSportif.csproj", "{9F923B12-2FF5-416E-9EAD-79D2D5986B87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

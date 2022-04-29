@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "291090906808",
+    "firebase_url": "https://lesportif-40abb-default-rtdb.firebaseio.com",
+    "project_id": "lesportif-40abb",
+    "storage_bucket": "lesportif-40abb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291090906808:android:dba9fef55c7221e12b7e4d",
+        "android_client_info": {
+          "package_name": "com.companyname.lesportif"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291090906808-09vknbf75o0es5nme3b843iqhfua4pjn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9UfKvPAAZKHOGdHchRnTovXL0XPtQpQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291090906808-09vknbf75o0es5nme3b843iqhfua4pjn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "291090906808-gsm4ffslu8cq49om9b414ugss5caj3b6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.companyname.LeSportif"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

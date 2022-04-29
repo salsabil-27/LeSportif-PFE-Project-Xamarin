@@ -8,11 +8,12 @@ namespace LeSportif.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EditPage : ContentPage
-    {  public static User appUser;
+    { public static User appUser;
+         
         public EditPage()
         {
             InitializeComponent();
-           BindingContext = App.appUser;
+            BindingContext = App.appUser;
         }
         void OnSliderValueChanged(object sender, ValueChangedEventArgs args)
         {
@@ -37,16 +38,16 @@ namespace LeSportif.Pages
 
         void Button_Clicked(System.Object sender, System.EventArgs e)
         {
-           App.appUser.name = NameEntry.Text;
-            App.appUser.gender = GenderEntry.Text;
+
+            App.appUser.name = NameEntry.Text;
+            App.appUser.gender = (string)GenderEntry.SelectedItem;
             App.appUser.height = Convert.ToInt32(HeightEntry.Text);
             App.appUser.weight = Convert.ToInt32(WeightEntry.Text);
             App.todaysTarget.calorieTarget = Convert.ToInt32(CalorieSlider.Value);
             App.todaysTarget.workoutTarget = Convert.ToInt32(WorkoutTarget.Text);
             App.todaysTarget.sleepTarget = Convert.ToSingle(SleepSlider.Value);
             App.appUser.setDailyTarget(App.todaysTarget);
-         
+
             Navigation.PopAsync();
         }
-    }
-}
+    } }

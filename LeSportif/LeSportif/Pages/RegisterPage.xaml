@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pagemodels="clr-namespace:LeSportif.PageModels" xmlns:extensions="http://xamarin.com/schemas/2020/toolkit" x:DataType="pagemodels:RegisterPageModel"
+             x:Class="LeSportif.Pages.RegisterPage">
+    <Grid>
+
+        <extensions:MediaElement x:Name="Bgvieo"  Source="https://static.videezy.com/system/resources/previews/000/032/887/original/man-gym-dumbel4.mp4"  Aspect="AspectFill" AutoPlay="True" Volume="0" IsLooping="True" ShowsPlaybackControls="False"
+                                   HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <BoxView>
+            <BoxView.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="Black" Offset="0"></GradientStop>
+                    <GradientStop Color="Transparent" Offset="0.9"></GradientStop>
+                    <GradientStop Color="Black" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center"/>
+
+        <StackLayout Padding="0" Margin="10,80,10,0" HorizontalOptions="FillAndExpand">
+            <Frame  BackgroundColor="Transparent" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
+
+                <StackLayout>
+
+
+
+                    <StackLayout Margin="60">
+                        <Label Text="Sign up"  TextColor="White" FontSize="Title" HorizontalOptions="CenterAndExpand" FontAttributes="Italic" />
+                    </StackLayout>
+
+                    <StackLayout Padding="0" Margin="10,10">
+
+                        <Frame BackgroundColor="Transparent" BorderColor="White" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" Margin="0,15,0,0">
+                            <StackLayout Orientation="Horizontal" >
+                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="email" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+
+                                <Entry Placeholder="Email" PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"
+                                            Text="{Binding Email}" TextColor="WhiteSmoke" Keyboard="Email" />
+                            </StackLayout>
+                        </Frame>
+
+
+                        <Frame BackgroundColor="Transparent" BorderColor="White" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" Margin="0,20,0,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="password.png" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+
+                                <Entry Placeholder="Password" PlaceholderColor="Gray"  FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"
+                                            Text="{Binding Password}" TextColor="WhiteSmoke" IsPassword="True"/>
+                            </StackLayout>
+                        </Frame>
+
+
+
+
+
+
+                        <Button Text="SIGN UP" BackgroundColor="CadetBlue" TextColor="White"  CornerRadius="30" Command="{Binding  RegisterCommand  }" Margin="0,2,0,0"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" 
+                                         >
+                            <Label Text="ALready have an account ?" TextColor="White" FontSize="Small" Padding="13"/>
+                            <Button Text="SIGN IN" TextColor="CadetBlue"  BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" FontSize="Small"  Command="{Binding SignInCommand}"/>
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </StackLayout>
+
+            </Frame>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
