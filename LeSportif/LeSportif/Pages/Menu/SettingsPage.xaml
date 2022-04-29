@@ -3,7 +3,56 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pagemodels="clr-namespace:LeSportif.PageModels" x:DataType="pagemodels:SettingsPageModel"
              x:Class="LeSportif.Pages.Menu.SettingsPage">
 
-  
-    
-    
+
+
+    <Grid>
+        <StackLayout Padding="0,10,0,0">
+            <Frame Grid.Row="5" HasShadow="True" HeightRequest="100" WidthRequest="100" CornerRadius="30" Margin="20" Padding="20" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="AliceBlue" >
+                <Grid RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+
+
+                    </Grid.RowDefinitions>
+                    <StackLayout Orientation="Horizontal" Margin="-5,10,0,-15" >
+
+                        <Frame   BackgroundColor="Black" HeightRequest="70" WidthRequest="70" CornerRadius="50" Padding="2,0,0,0" Margin="-5">
+                            <Image Source="cerclelogo.png" Aspect="AspectFill" Margin="0"/>
+                        </Frame>
+                    </StackLayout>
+                    <Label Text=" LeSportif was originally created by Ms Salsabil-Zabaar and Ms Roua-Mnissi " Margin="80,8,0,0" FontSize="15" FontAttributes="Italic" TextColor="Black"></Label>
+                    <!--Label x:Name="displayLabel" Text = "" Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="5"/-->
+
+                </Grid>
+            </Frame>
+        </StackLayout>
+        <StackLayout  Padding="0,180,0,0">
+
+            <Frame Grid.Row="4" HasShadow="True" HeightRequest="500" CornerRadius="30" Margin="20" Padding="20" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="AliceBlue" >
+                <Grid RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+
+
+                    </Grid.RowDefinitions>
+
+
+                    <!--Label x:Name="displayLabel" Text = "" Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="5"/-->
+                    <Label Text=" Connexions " FontSize="Title" TextColor="LightBlue"></Label>
+                    <StackLayout>
+                        <Button Text="Reset Password" FontSize="20" BackgroundColor="Transparent" BorderColor="Black" BorderWidth="2" TextColor="Black" Margin="20,100,20,0" Padding="20" Clicked="Button_Clicked"></Button>
+                        <Button Text="LogOut" FontSize="20" BackgroundColor="Transparent" BorderColor="Black" BorderWidth="2" TextColor="Black" Margin="20,10,20,0" Padding="20" Clicked="Button_Clicked_1"></Button>
+
+                    </StackLayout>
+                </Grid>
+
+            </Frame>
+        </StackLayout>
+    </Grid>
+
+
 </ContentPage>
