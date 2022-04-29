@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pagemodels="clr-namespace:LeSportif.PageModels" xmlns:extensions="http://xamarin.com/schemas/2020/toolkit" x:DataType="pagemodels:RegisterPageModel"
-             x:Class="LeSportif.Pages.RegisterPage">
+             x:Class="LeSportif.Pages.RegisterPage"
+             NavigationPage.HasNavigationBar="False">
     <Grid>
 
         <extensions:MediaElement x:Name="Bgvieo"  Source="https://static.videezy.com/system/resources/previews/000/032/887/original/man-gym-dumbel4.mp4"  Aspect="AspectFill" AutoPlay="True" Volume="0" IsLooping="True" ShowsPlaybackControls="False"
@@ -58,7 +59,7 @@
 
 
 
-                        <Button Text="SIGN UP" BackgroundColor="CadetBlue" TextColor="White"  CornerRadius="30" Command="{Binding  RegisterCommand  }" Margin="0,2,0,0"/>
+                        <Button Text="SIGN UP" BackgroundColor="CadetBlue" TextColor="White"  CornerRadius="30" Command="{Binding  RegisterCommand  }" Margin="0,20,0,0"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" 
                                          >
                             <Label Text="ALready have an account ?" TextColor="White" FontSize="Small" Padding="13"/>
