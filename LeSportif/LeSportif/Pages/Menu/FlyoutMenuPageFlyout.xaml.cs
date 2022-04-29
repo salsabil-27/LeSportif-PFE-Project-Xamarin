@@ -34,7 +34,7 @@ namespace LeSportif.Pages.Menu
                 MenuItems = new ObservableCollection<FlyoutMenuPageFlyoutMenuItem>(new[]
                 {
                   new FlyoutMenuPageFlyoutMenuItem { Id = 0, Title = "Profile" ,TargetType=typeof(FlyoutMenuPageDetail) ,IconSource ="user.png"},
-                    new FlyoutMenuPageFlyoutMenuItem { Id = 1, Title = "Messages" ,TargetType=typeof(MessagesPage) ,IconSource ="message.png"},
+    
                     new FlyoutMenuPageFlyoutMenuItem { Id = 2, Title = "Statistics" ,TargetType=typeof(StatisticsPage) ,IconSource ="heartbeat.png"},
                     new FlyoutMenuPageFlyoutMenuItem { Id = 3, Title = "Settings" ,TargetType=typeof(SettingsPage) ,IconSource ="settings.png"},
                 });
