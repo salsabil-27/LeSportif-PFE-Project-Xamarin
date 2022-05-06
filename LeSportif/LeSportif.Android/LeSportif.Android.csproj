@@ -230,13 +230,19 @@
     <AndroidResource Include="Resources\drawable\cerclelogo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\salle3.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\height.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\weight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\couple2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\couple4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\couple5.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
