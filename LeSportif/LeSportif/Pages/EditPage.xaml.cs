@@ -9,11 +9,13 @@ namespace LeSportif.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EditPage : ContentPage
     { public static User appUser;
-         
+
         public EditPage()
         {
+            try { 
             InitializeComponent();
-            BindingContext = App.appUser;
+            BindingContext = App.appUser; }
+            catch(Exception) { }
         }
         void OnSliderValueChanged(object sender, ValueChangedEventArgs args)
         {

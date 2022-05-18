@@ -14,12 +14,19 @@ namespace LeSportif.Pages.Menu
     {
         public FlyoutMenuPageDetail()
         {
-            InitializeComponent();
-            BindingContext = App.appUser;
-            loadCharts();
-            WorkoutGoal.Text = App.todaysTarget.workoutTarget.ToString();
-            calorieSlider.Text = App.todaysTarget.calorieTarget.ToString();
-            sleepSlider.Text = App.todaysTarget.sleepTarget.ToString();
+            try
+            {
+                InitializeComponent();
+                BindingContext = App.appUser;
+                loadCharts();
+                WorkoutGoal.Text = App.todaysTarget.workoutTarget.ToString();
+                calorieSlider.Text = App.todaysTarget.calorieTarget.ToString();
+                sleepSlider.Text = App.todaysTarget.sleepTarget.ToString();
+            }
+              catch (Exception)
+               { }
+                  
+
             //  Weight.Text== App.todaysTarget.sleepTarget.ToString();
         }
         void ContentPage_Appearing(System.Object sender, System.EventArgs e)
